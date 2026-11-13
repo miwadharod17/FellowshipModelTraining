@@ -1,0 +1,7 @@
+*.tflite binary
+*.bin binary
+*.npy binary
+*.npz binary
+*.png binary
+*.json text eol=lf
+*.py text eol=lf
