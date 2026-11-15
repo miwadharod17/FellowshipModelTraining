@@ -1,0 +1,588 @@
+{
+  "name": "dl6_mobilenetv2_fp16",
+  "date": "2026-11-15",
+  "seed": 42,
+  "dataset": "none (pretrained ImageNet MobileNetV2, 20 sample images for testing)",
+  "settings": {
+    "model": "MobileNetV2 alpha=1.0 224x224",
+    "fp16": true,
+    "parity_mode": "relative",
+    "taps": [
+      "Conv1_relu",
+      "block_2_add",
+      "block_5_add",
+      "block_9_add",
+      "block_16_project_BN"
+    ],
+    "tap_shapes": {
+      "Conv1_relu": [
+        112,
+        112,
+        32
+      ],
+      "block_2_add": [
+        56,
+        56,
+        24
+      ],
+      "block_5_add": [
+        28,
+        28,
+        32
+      ],
+      "block_9_add": [
+        14,
+        14,
+        64
+      ],
+      "block_16_project_BN": [
+        7,
+        7,
+        320
+      ]
+    },
+    "size_mb": 7.06,
+    "random_weights": false
+  },
+  "sample_top5": [
+    {
+      "image": "01.jpg",
+      "top5": [
+        {
+          "label": "school_bus",
+          "p": 0.9463
+        },
+        {
+          "label": "moving_van",
+          "p": 0.0046
+        },
+        {
+          "label": "trailer_truck",
+          "p": 0.0024
+        },
+        {
+          "label": "passenger_car",
+          "p": 0.0012
+        },
+        {
+          "label": "fire_engine",
+          "p": 0.001
+        }
+      ]
+    },
+    {
+      "image": "02.jpg",
+      "top5": [
+        {
+          "label": "acoustic_guitar",
+          "p": 0.8563
+        },
+        {
+          "label": "cello",
+          "p": 0.0493
+        },
+        {
+          "label": "electric_guitar",
+          "p": 0.0037
+        },
+        {
+          "label": "violin",
+          "p": 0.0023
+        },
+        {
+          "label": "printer",
+          "p": 0.001
+        }
+      ]
+    },
+    {
+      "image": "03.jpg",
+      "top5": [
+        {
+          "label": "zebra",
+          "p": 0.9687
+        },
+        {
+          "label": "impala",
+          "p": 0.002
+        },
+        {
+          "label": "hartebeest",
+          "p": 0.0013
+        },
+        {
+          "label": "gazelle",
+          "p": 0.0007
+        },
+        {
+          "label": "ostrich",
+          "p": 0.0006
+        }
+      ]
+    },
+    {
+      "image": "04.jpg",
+      "top5": [
+        {
+          "label": "espresso",
+          "p": 0.7369
+        },
+        {
+          "label": "cup",
+          "p": 0.0381
+        },
+        {
+          "label": "red_wine",
+          "p": 0.0246
+        },
+        {
+          "label": "coffee_mug",
+          "p": 0.0112
+        },
+        {
+          "label": "chocolate_sauce",
+          "p": 0.0081
+        }
+      ]
+    },
+    {
+      "image": "05.jpg",
+      "top5": [
+        {
+          "label": "banana",
+          "p": 0.7527
+        },
+        {
+          "label": "zucchini",
+          "p": 0.0391
+        },
+        {
+          "label": "butternut_squash",
+          "p": 0.0182
+        },
+        {
+          "label": "spaghetti_squash",
+          "p": 0.0085
+        },
+        {
+          "label": "jackfruit",
+          "p": 0.0025
+        }
+      ]
+    },
+    {
+      "image": "06.jpg",
+      "top5": [
+        {
+          "label": "cup",
+          "p": 0.1848
+        },
+        {
+          "label": "beer_glass",
+          "p": 0.104
+        },
+        {
+          "label": "measuring_cup",
+          "p": 0.0406
+        },
+        {
+          "label": "pitcher",
+          "p": 0.0384
+        },
+        {
+          "label": "teapot",
+          "p": 0.0266
+        }
+      ]
+    },
+    {
+      "image": "07.jpg",
+      "top5": [
+        {
+          "label": "strawberry",
+          "p": 0.8634
+        },
+        {
+          "label": "tray",
+          "p": 0.0021
+        },
+        {
+          "label": "trifle",
+          "p": 0.0015
+        },
+        {
+          "label": "agaric",
+          "p": 0.0014
+        },
+        {
+          "label": "chocolate_sauce",
+          "p": 0.0011
+        }
+      ]
+    },
+    {
+      "image": "08.jpg",
+      "top5": [
+        {
+          "label": "pizza",
+          "p": 0.9614
+        },
+        {
+          "label": "hen-of-the-woods",
+          "p": 0.0024
+        },
+        {
+          "label": "bagel",
+          "p": 0.0022
+        },
+        {
+          "label": "plate",
+          "p": 0.0021
+        },
+        {
+          "label": "king_crab",
+          "p": 0.0014
+        }
+      ]
+    },
+    {
+      "image": "09.jpg",
+      "top5": [
+        {
+          "label": "Labrador_retriever",
+          "p": 0.8098
+        },
+        {
+          "label": "kelpie",
+          "p": 0.0088
+        },
+        {
+          "label": "golden_retriever",
+          "p": 0.0077
+        },
+        {
+          "label": "Chesapeake_Bay_retriever",
+          "p": 0.0061
+        },
+        {
+          "label": "tennis_ball",
+          "p": 0.0049
+        }
+      ]
+    },
+    {
+      "image": "10.jpg",
+      "top5": [
+        {
+          "label": "sports_car",
+          "p": 0.6055
+        },
+        {
+          "label": "racer",
+          "p": 0.091
+        },
+        {
+          "label": "convertible",
+          "p": 0.0447
+        },
+        {
+          "label": "car_wheel",
+          "p": 0.0277
+        },
+        {
+          "label": "go-kart",
+          "p": 0.0081
+        }
+      ]
+    },
+    {
+      "image": "11.jpg",
+      "top5": [
+        {
+          "label": "airliner",
+          "p": 0.92
+        },
+        {
+          "label": "wing",
+          "p": 0.0583
+        },
+        {
+          "label": "warplane",
+          "p": 0.0021
+        },
+        {
+          "label": "space_shuttle",
+          "p": 0.0014
+        },
+        {
+          "label": "hair_slide",
+          "p": 0.0004
+        }
+      ]
+    },
+    {
+      "image": "12.jpg",
+      "top5": [
+        {
+          "label": "orange",
+          "p": 0.9343
+        },
+        {
+          "label": "lemon",
+          "p": 0.025
+        },
+        {
+          "label": "butternut_squash",
+          "p": 0.002
+        },
+        {
+          "label": "French_loaf",
+          "p": 0.0013
+        },
+        {
+          "label": "jack-o'-lantern",
+          "p": 0.0011
+        }
+      ]
+    },
+    {
+      "image": "13.jpg",
+      "top5": [
+        {
+          "label": "mountain_bike",
+          "p": 0.5382
+        },
+        {
+          "label": "tricycle",
+          "p": 0.0847
+        },
+        {
+          "label": "bicycle-built-for-two",
+          "p": 0.0757
+        },
+        {
+          "label": "jinrikisha",
+          "p": 0.0139
+        },
+        {
+          "label": "unicycle",
+          "p": 0.0124
+        }
+      ]
+    },
+    {
+      "image": "14.jpg",
+      "top5": [
+        {
+          "label": "beacon",
+          "p": 0.3969
+        },
+        {
+          "label": "breakwater",
+          "p": 0.383
+        },
+        {
+          "label": "container_ship",
+          "p": 0.0231
+        },
+        {
+          "label": "liner",
+          "p": 0.0076
+        },
+        {
+          "label": "water_tower",
+          "p": 0.0048
+        }
+      ]
+    },
+    {
+      "image": "15.jpg",
+      "top5": [
+        {
+          "label": "pinwheel",
+          "p": 0.1489
+        },
+        {
+          "label": "freight_car",
+          "p": 0.0167
+        },
+        {
+          "label": "parachute",
+          "p": 0.0139
+        },
+        {
+          "label": "balloon",
+          "p": 0.0128
+        },
+        {
+          "label": "pencil_sharpener",
+          "p": 0.0126
+        }
+      ]
+    },
+    {
+      "image": "16.jpg",
+      "top5": [
+        {
+          "label": "goldfish",
+          "p": 0.9118
+        },
+        {
+          "label": "anemone_fish",
+          "p": 0.0018
+        },
+        {
+          "label": "rock_beauty",
+          "p": 0.0017
+        },
+        {
+          "label": "sea_anemone",
+          "p": 0.0014
+        },
+        {
+          "label": "isopod",
+          "p": 0.0008
+        }
+      ]
+    },
+    {
+      "image": "17.jpg",
+      "top5": [
+        {
+          "label": "tiger_cat",
+          "p": 0.4535
+        },
+        {
+          "label": "tabby",
+          "p": 0.4055
+        },
+        {
+          "label": "Egyptian_cat",
+          "p": 0.0127
+        },
+        {
+          "label": "mouse",
+          "p": 0.0051
+        },
+        {
+          "label": "remote_control",
+          "p": 0.0044
+        }
+      ]
+    },
+    {
+      "image": "18.jpg",
+      "top5": [
+        {
+          "label": "hen",
+          "p": 0.8148
+        },
+        {
+          "label": "partridge",
+          "p": 0.0212
+        },
+        {
+          "label": "cock",
+          "p": 0.0148
+        },
+        {
+          "label": "house_finch",
+          "p": 0.0142
+        },
+        {
+          "label": "ruffed_grouse",
+          "p": 0.008
+        }
+      ]
+    },
+    {
+      "image": "19.jpg",
+      "top5": [
+        {
+          "label": "backpack",
+          "p": 0.5244
+        },
+        {
+          "label": "mailbag",
+          "p": 0.0552
+        },
+        {
+          "label": "tripod",
+          "p": 0.0154
+        },
+        {
+          "label": "mountain_tent",
+          "p": 0.0132
+        },
+        {
+          "label": "bulletproof_vest",
+          "p": 0.0126
+        }
+      ]
+    },
+    {
+      "image": "20.jpg",
+      "top5": [
+        {
+          "label": "notebook",
+          "p": 0.8326
+        },
+        {
+          "label": "laptop",
+          "p": 0.0878
+        },
+        {
+          "label": "mouse",
+          "p": 0.0144
+        },
+        {
+          "label": "desktop_computer",
+          "p": 0.0132
+        },
+        {
+          "label": "computer_keyboard",
+          "p": 0.011
+        }
+      ]
+    }
+  ],
+  "top1_agreement": 1.0,
+  "parity_pass": true,
+  "relative_parity_worst": {
+    "0": {
+      "cos": 0.9996182322502136,
+      "mean_err": 0.026604242622852325,
+      "abs": 0.6246389150619507
+    },
+    "1": {
+      "cos": 0.9999994039535522,
+      "mean_err": 0.0002463541750330478,
+      "abs": 0.002808809280395508
+    },
+    "2": {
+      "cos": 0.9993026852607727,
+      "mean_err": 0.03552016243338585,
+      "abs": 0.4012669324874878
+    },
+    "3": {
+      "cos": 0.9997146725654602,
+      "mean_err": 0.024330109357833862,
+      "abs": 0.5624456405639648
+    },
+    "4": {
+      "cos": 0.9997444152832031,
+      "mean_err": 0.02161356434226036,
+      "abs": 0.010520905256271362
+    },
+    "5": {
+      "cos": 0.9999207854270935,
+      "mean_err": 0.013733898289501667,
+      "abs": 0.34270572662353516
+    }
+  },
+  "relative_parity_criteria": {
+    "cosine_min": 0.999,
+    "feature_map_mean_rel_err_max": 0.05,
+    "predictions_abs_max": 0.02
+  }
+}
