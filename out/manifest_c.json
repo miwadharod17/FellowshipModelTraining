@@ -1568,5 +1568,274 @@
     ],
     "preprocessing": "input is a 224x224 RGB image, pixel values 0 to 255 (shorter side resized to 224, centre crop). Rescaling to -1..1 is done inside the model.",
     "parity": "fp16 vs fp32 Keras: for each output cosine similarity >= 0.999; feature maps mean |diff|/mean |ref| <= 0.05; predictions max abs diff <= 0.02. Use the same rule with the golden files."
+  },
+  {
+    "id": "dl7_digit_c1",
+    "type": "model",
+    "version": 1,
+    "file": "dl7_digit_c1.tflite",
+    "sha256": "79701c19c577559139bed029784cfdde08f8088674aee706059d923a028d2c9b",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          28,
+          28,
+          1
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "shape": [
+          1,
+          28,
+          28,
+          8
+        ],
+        "dtype": "float32",
+        "role": "feature_map"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "shape": [
+          1,
+          10
+        ],
+        "dtype": "float32",
+        "role": "probabilities"
+      }
+    ],
+    "labels": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "preprocessing": "none inside the model: input is a 28x28 grayscale image (white digit or shape on black), shape [1,28,28,1], float32 values already scaled 0 to 1"
+  },
+  {
+    "id": "dl7_digit_c2",
+    "type": "model",
+    "version": 1,
+    "file": "dl7_digit_c2.tflite",
+    "sha256": "19cae081c186ac42c230d916ffda1e5f86741c2d5a10c4feec5cdfc1a53bfaae",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          28,
+          28,
+          1
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "shape": [
+          1,
+          28,
+          28,
+          8
+        ],
+        "dtype": "float32",
+        "role": "feature_map"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "shape": [
+          1,
+          10
+        ],
+        "dtype": "float32",
+        "role": "probabilities"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "shape": [
+          1,
+          14,
+          14,
+          16
+        ],
+        "dtype": "float32",
+        "role": "feature_map"
+      }
+    ],
+    "labels": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "preprocessing": "none inside the model: input is a 28x28 grayscale image (white digit or shape on black), shape [1,28,28,1], float32 values already scaled 0 to 1"
+  },
+  {
+    "id": "dl7_digit_c3",
+    "type": "model",
+    "version": 1,
+    "file": "dl7_digit_c3.tflite",
+    "sha256": "c2c35b2f13fb3e5bef875bc5d1ea94bccc1afb45cc53654e9cb0054f1dac3d6a",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          28,
+          28,
+          1
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "shape": [
+          1,
+          28,
+          28,
+          8
+        ],
+        "dtype": "float32",
+        "role": "feature_map"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:3",
+        "shape": [
+          1,
+          7,
+          7,
+          32
+        ],
+        "dtype": "float32",
+        "role": "feature_map"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "shape": [
+          1,
+          10
+        ],
+        "dtype": "float32",
+        "role": "probabilities"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "shape": [
+          1,
+          14,
+          14,
+          16
+        ],
+        "dtype": "float32",
+        "role": "feature_map"
+      }
+    ],
+    "labels": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "preprocessing": "none inside the model: input is a 28x28 grayscale image (white digit or shape on black), shape [1,28,28,1], float32 values already scaled 0 to 1"
+  },
+  {
+    "id": "dl7_shape_c2",
+    "type": "model",
+    "version": 1,
+    "file": "dl7_shape_c2.tflite",
+    "sha256": "33468ba2e4898a8b91e37ec181aeac01b0e96bf3ceea26aab2bf3880fe90a268",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          28,
+          28,
+          1
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "shape": [
+          1,
+          28,
+          28,
+          8
+        ],
+        "dtype": "float32",
+        "role": "feature_map"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "shape": [
+          1,
+          3
+        ],
+        "dtype": "float32",
+        "role": "probabilities"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "shape": [
+          1,
+          14,
+          14,
+          16
+        ],
+        "dtype": "float32",
+        "role": "feature_map"
+      }
+    ],
+    "labels": [
+      "circle",
+      "square",
+      "triangle"
+    ],
+    "preprocessing": "none inside the model: input is a 28x28 grayscale image (white digit or shape on black), shape [1,28,28,1], float32 values already scaled 0 to 1"
   }
 ]
