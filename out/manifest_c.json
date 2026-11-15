@@ -1,0 +1,479 @@
+[
+  {
+    "id": "dl5_ae_b2_linear",
+    "type": "model",
+    "version": 1,
+    "file": "dl5_ae_b2_linear.tflite",
+    "sha256": "3f91434fb3f987b2776ad0a5653bd2b5aaff20b5793947f3efe7c0371b16dc51",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "role": "latent",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "role": "reconstruction",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "role": "recon_error",
+        "shape": [
+          1,
+          1
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "labels": null,
+    "preprocessing": "none inside the model: input is the 28x28 digit flattened to 784 float32 values already scaled 0 to 1",
+    "anomaly_threshold": 0.08662258833646774
+  },
+  {
+    "id": "dl5_ae_b2_relu",
+    "type": "model",
+    "version": 1,
+    "file": "dl5_ae_b2_relu.tflite",
+    "sha256": "4e3694c444d401ddafa3b9ff9f3cafeb0f408ada2ff16e2fb37eabbbf0212574",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "role": "latent",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "role": "reconstruction",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "role": "recon_error",
+        "shape": [
+          1,
+          1
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "labels": null,
+    "preprocessing": "none inside the model: input is the 28x28 digit flattened to 784 float32 values already scaled 0 to 1",
+    "anomaly_threshold": 0.0769539326429367
+  },
+  {
+    "id": "dl5_ae_b2_dae",
+    "type": "model",
+    "version": 1,
+    "file": "dl5_ae_b2_dae.tflite",
+    "sha256": "22a41eeeb4a4751b4571c4086f7521531366303359022b265ed2ee20b78215f9",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "role": "latent",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "role": "reconstruction",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "role": "recon_error",
+        "shape": [
+          1,
+          1
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "labels": null,
+    "preprocessing": "none inside the model: input is the 28x28 digit flattened to 784 float32 values already scaled 0 to 1",
+    "anomaly_threshold": 0.07947501540184021
+  },
+  {
+    "id": "dl5_ae_b8_linear",
+    "type": "model",
+    "version": 1,
+    "file": "dl5_ae_b8_linear.tflite",
+    "sha256": "9e38b0b959e89206a607102b5033374c2ed0e4d3ab1cbe2a7b3a281ec99bc50d",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "role": "latent",
+        "shape": [
+          1,
+          8
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "role": "reconstruction",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "role": "recon_error",
+        "shape": [
+          1,
+          1
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "labels": null,
+    "preprocessing": "none inside the model: input is the 28x28 digit flattened to 784 float32 values already scaled 0 to 1",
+    "anomaly_threshold": 0.05945828929543495
+  },
+  {
+    "id": "dl5_ae_b8_relu",
+    "type": "model",
+    "version": 1,
+    "file": "dl5_ae_b8_relu.tflite",
+    "sha256": "bdd9c14ffba71ceaaacd51cb23b86b11d7dbfcea890e6d1b51fefac1084cbaf0",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "role": "latent",
+        "shape": [
+          1,
+          8
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "role": "reconstruction",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "role": "recon_error",
+        "shape": [
+          1,
+          1
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "labels": null,
+    "preprocessing": "none inside the model: input is the 28x28 digit flattened to 784 float32 values already scaled 0 to 1",
+    "anomaly_threshold": 0.04197397083044052
+  },
+  {
+    "id": "dl5_ae_b8_dae",
+    "type": "model",
+    "version": 1,
+    "file": "dl5_ae_b8_dae.tflite",
+    "sha256": "fd09c547971cd736acca30960e8e7c56a9aaa63b2ceb10cfeb283d5405be117a",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "role": "latent",
+        "shape": [
+          1,
+          8
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "role": "reconstruction",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "role": "recon_error",
+        "shape": [
+          1,
+          1
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "labels": null,
+    "preprocessing": "none inside the model: input is the 28x28 digit flattened to 784 float32 values already scaled 0 to 1",
+    "anomaly_threshold": 0.04742009565234184
+  },
+  {
+    "id": "dl5_ae_b32_linear",
+    "type": "model",
+    "version": 1,
+    "file": "dl5_ae_b32_linear.tflite",
+    "sha256": "a0bce1a616e76e1c52a839f517c998199a15c744a16425259304ed7d0c09916e",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "role": "latent",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "role": "reconstruction",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "role": "recon_error",
+        "shape": [
+          1,
+          1
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "labels": null,
+    "preprocessing": "none inside the model: input is the 28x28 digit flattened to 784 float32 values already scaled 0 to 1",
+    "anomaly_threshold": 0.028710629791021347
+  },
+  {
+    "id": "dl5_ae_b32_relu",
+    "type": "model",
+    "version": 1,
+    "file": "dl5_ae_b32_relu.tflite",
+    "sha256": "bff7ce4a919f19c79829f359af9ccf1211631ffcb98ab3c711595b172c164e61",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "role": "latent",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "role": "reconstruction",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "role": "recon_error",
+        "shape": [
+          1,
+          1
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "labels": null,
+    "preprocessing": "none inside the model: input is the 28x28 digit flattened to 784 float32 values already scaled 0 to 1",
+    "anomaly_threshold": 0.018152588978409767
+  },
+  {
+    "id": "dl5_ae_b32_dae",
+    "type": "model",
+    "version": 1,
+    "file": "dl5_ae_b32_dae.tflite",
+    "sha256": "943d3ecb04fc7fc219793c92c49526ee745645441e7774e3436421c59123be24",
+    "inputs": [
+      {
+        "name": "serving_default_image:0",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32",
+        "range": [
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "role": "latent",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "role": "reconstruction",
+        "shape": [
+          1,
+          784
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:2",
+        "role": "recon_error",
+        "shape": [
+          1,
+          1
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "labels": null,
+    "preprocessing": "none inside the model: input is the 28x28 digit flattened to 784 float32 values already scaled 0 to 1",
+    "anomaly_threshold": 0.023858116939663887
+  }
+]
