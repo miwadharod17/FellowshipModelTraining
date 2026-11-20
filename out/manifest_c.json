@@ -1837,5 +1837,52 @@
       "triangle"
     ],
     "preprocessing": "none inside the model: input is a 28x28 grayscale image (white digit or shape on black), shape [1,28,28,1], float32 values already scaled 0 to 1"
+  },
+  {
+    "id": "dl9_tiny_mlm_fp16",
+    "type": "model",
+    "version": 1,
+    "file": "dl9_tiny_mlm_fp16.tflite",
+    "sha256": "c5a6daf73d9c52812e3d5d98c198cbe5188d252965dc4d8f92fa7a5a47588ef3",
+    "inputs": [
+      {
+        "name": "serving_default_token_ids:0",
+        "shape": [
+          1,
+          12
+        ],
+        "dtype": "int32",
+        "range": [
+          0,
+          55
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "StatefulPartitionedCall_1:1",
+        "shape": [
+          1,
+          4,
+          12,
+          12
+        ],
+        "dtype": "float32",
+        "role": "attn_scores"
+      },
+      {
+        "name": "StatefulPartitionedCall_1:0",
+        "shape": [
+          1,
+          12,
+          56
+        ],
+        "dtype": "float32",
+        "role": "mlm_logits"
+      }
+    ],
+    "labels": null,
+    "preprocessing": "input is 12 token ids (see dl9_vocab.json: lowercase, split on spaces, [CLS] first, [SEP] last, pad with 0). Outputs: mlm_logits [1,12,56] and attn_scores [1,4,12,12] = raw scores before softmax, heads in the order layer0-head0, layer0-head1, layer1-head0, layer1-head1 (padding keys are -10000). The app computes softmax(scores / temperature) itself.",
+    "parity": "fp16 vs fp32 Keras: cosine >= 0.999 and mean |diff|/mean |ref| <= 0.05 per output (padding entries of attn_scores ignored). Use the same rule with the golden files."
   }
 ]

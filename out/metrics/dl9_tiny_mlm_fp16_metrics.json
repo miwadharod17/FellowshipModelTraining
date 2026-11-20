@@ -1,0 +1,75 @@
+{
+  "name": "dl9_tiny_mlm_fp16",
+  "date": "2026-11-20",
+  "seed": 42,
+  "dataset": "template sentences generated in train_dl9.py (see the script), seed 42",
+  "settings": {
+    "layers": 2,
+    "heads": 2,
+    "d_model": 32,
+    "ffn": 64,
+    "max_len": 12,
+    "vocab_size": 56,
+    "epochs": 10,
+    "n_train": 60000,
+    "masking": "1-2 words per sentence",
+    "fp16": true,
+    "ids_dtype": "int32",
+    "parity_mode": "relative",
+    "head_order": [
+      "layer0_head0",
+      "layer0_head1",
+      "layer1_head0",
+      "layer1_head1"
+    ]
+  },
+  "loss_curve": [
+    1.505372166633606,
+    1.0976648330688477,
+    1.0860557556152344,
+    1.081684947013855,
+    1.079230785369873,
+    1.0774492025375366,
+    1.0775253772735596,
+    1.0751274824142456,
+    1.0742377042770386,
+    1.0736236572265625
+  ],
+  "val_loss_curve": [
+    0.9741964936256409,
+    0.9539514183998108,
+    0.9466944932937622,
+    0.9410732388496399,
+    0.9399853944778442,
+    0.9391375780105591,
+    0.9414506554603577,
+    0.9416407346725464,
+    0.9427774548530579,
+    0.9400774240493774
+  ],
+  "masked_word_accuracy": 0.5132275132275133,
+  "verb_agreement_accuracy": 1.0,
+  "attention_verb_to_subject": {
+    "layer0_head0": 0.12106112390756607,
+    "layer0_head1": 0.1195083037018776,
+    "layer1_head0": 0.2161860316991806,
+    "layer1_head1": 0.4222595691680908
+  },
+  "attention_uniform_baseline": 0.09319999999999999,
+  "label_agreement": 0.9986772486772487,
+  "label_agreement_confident": 1.0,
+  "parity_worst": {
+    "0": {
+      "abs": 0.004680991172790527,
+      "cos": 0.9999998807907104,
+      "rel": 0.0005451212055049837
+    },
+    "1": {
+      "abs": 0.01455267146229744,
+      "cos": 0.9999997019767761,
+      "rel": 0.0006801644922234118
+    }
+  },
+  "parity_pass": true,
+  "size_kb": 68.1
+}

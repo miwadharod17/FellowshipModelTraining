@@ -1,0 +1,220 @@
+{
+ "examples": [
+  {
+   "text": "the mice watch the bone in the house",
+   "ids": [
+    2,
+    51,
+    36,
+    54,
+    51,
+    12,
+    32,
+    51,
+    31,
+    3,
+    0,
+    0
+   ],
+   "note": "plain sentence"
+  },
+  {
+   "text": "a horse watches the fish near the tree",
+   "ids": [
+    2,
+    5,
+    29,
+    55,
+    51,
+    22,
+    38,
+    51,
+    52,
+    3,
+    0,
+    0
+   ],
+   "note": "plain sentence"
+  },
+  {
+   "text": "the dog chases the bone by the wall",
+   "ids": [
+    2,
+    51,
+    19,
+    18,
+    51,
+    12,
+    14,
+    51,
+    53,
+    3,
+    0,
+    0
+   ],
+   "note": "plain sentence"
+  },
+  {
+   "text": "some foxes see the seed by the lake",
+   "ids": [
+    2,
+    49,
+    26,
+    45,
+    51,
+    46,
+    14,
+    51,
+    33,
+    3,
+    0,
+    0
+   ],
+   "note": "plain sentence"
+  },
+  {
+   "text": "a dog chases the ball by the door",
+   "ids": [
+    2,
+    5,
+    19,
+    18,
+    51,
+    7,
+    14,
+    51,
+    21,
+    3,
+    0,
+    0
+   ],
+   "note": "plain sentence"
+  },
+  {
+   "text": "the small dog follows the ball",
+   "ids": [
+    2,
+    51,
+    48,
+    19,
+    24,
+    51,
+    7,
+    3,
+    0,
+    0,
+    0,
+    0
+   ],
+   "note": "plain sentence"
+  },
+  {
+   "text": "the foxes see the stick by the door",
+   "ids": [
+    2,
+    51,
+    26,
+    45,
+    51,
+    50,
+    14,
+    51,
+    21,
+    3,
+    0,
+    0
+   ],
+   "note": "plain sentence"
+  },
+  {
+   "text": "some old dogs watch the ball on the roof",
+   "ids": [
+    2,
+    49,
+    39,
+    20,
+    54,
+    51,
+    7,
+    40,
+    51,
+    44,
+    3,
+    0
+   ],
+   "note": "plain sentence"
+  },
+  {
+   "text": "the big foxes [MASK] the apple by the door",
+   "ids": [
+    2,
+    51,
+    9,
+    26,
+    1,
+    51,
+    6,
+    14,
+    51,
+    21,
+    3,
+    0
+   ],
+   "note": "masked verb: look at which word it attends to"
+  },
+  {
+   "text": "a red horse [MASK] the apple",
+   "ids": [
+    2,
+    5,
+    41,
+    29,
+    1,
+    51,
+    6,
+    3,
+    0,
+    0,
+    0,
+    0
+   ],
+   "note": "masked verb: look at which word it attends to"
+  },
+  {
+   "text": "the horses [MASK] the bone",
+   "ids": [
+    2,
+    51,
+    30,
+    1,
+    51,
+    12,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "note": "masked verb: look at which word it attends to"
+  },
+  {
+   "text": "the old mouse [MASK] the seed in the garden",
+   "ids": [
+    2,
+    51,
+    39,
+    37,
+    1,
+    51,
+    46,
+    32,
+    51,
+    27,
+    3,
+    0
+   ],
+   "note": "masked verb: look at which word it attends to"
+  }
+ ]
+}
