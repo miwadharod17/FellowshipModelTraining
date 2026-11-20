@@ -1,0 +1,1181 @@
+{
+ "precomputed": true,
+ "note": "Results made ahead of time with pretrained Inception-ResNet-v2 (ImageNet). Show them labelled as precomputed.",
+ "model": "Inception-ResNet-v2, ImageNet weights, input 299x299 RGB",
+ "feature_map_picture": "each picture shows the 16 most varied channels of the layer, each scaled to its own range",
+ "random_weights": false,
+ "layers": [
+  {
+   "depth": "early",
+   "layer": "activation_4",
+   "description": "Early layer: edges, colours and textures",
+   "shape": [
+    71,
+    71,
+    192
+   ]
+  },
+  {
+   "depth": "middle",
+   "layer": "block17_10_ac",
+   "description": "Middle layer: parts and patterns",
+   "shape": [
+    17,
+    17,
+    1088
+   ]
+  },
+  {
+   "depth": "late",
+   "layer": "block8_5_ac",
+   "description": "Late layer: object-level features",
+   "shape": [
+    8,
+    8,
+    2080
+   ]
+  }
+ ],
+ "images": [
+  {
+   "id": "img01",
+   "source_file": "01.jpg",
+   "image": "dl8_images/img01.jpg",
+   "top5": [
+    {
+     "label": "school_bus",
+     "p": 0.9471
+    },
+    {
+     "label": "hyena",
+     "p": 0.001
+    },
+    {
+     "label": "European_fire_salamander",
+     "p": 0.0004
+    },
+    {
+     "label": "crane",
+     "p": 0.0004
+    },
+    {
+     "label": "African_hunting_dog",
+     "p": 0.0004
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img01_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      48,
+      139,
+      53,
+      90,
+      168,
+      41,
+      68,
+      99,
+      157,
+      177,
+      0,
+      155,
+      150,
+      2,
+      161,
+      165
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img01_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      942,
+      989,
+      1007,
+      895,
+      982,
+      998,
+      977,
+      1027,
+      878,
+      344,
+      236,
+      854,
+      858,
+      826,
+      956,
+      939
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img01_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      1077,
+      896,
+      1065,
+      152,
+      1334,
+      1335,
+      1000,
+      1752,
+      767,
+      735,
+      1882,
+      140,
+      1716,
+      1048,
+      751,
+      874
+     ]
+    }
+   }
+  },
+  {
+   "id": "img02",
+   "source_file": "02.jpg",
+   "image": "dl8_images/img02.jpg",
+   "top5": [
+    {
+     "label": "acoustic_guitar",
+     "p": 0.8986
+    },
+    {
+     "label": "banjo",
+     "p": 0.0059
+    },
+    {
+     "label": "electric_guitar",
+     "p": 0.0043
+    },
+    {
+     "label": "cello",
+     "p": 0.0028
+    },
+    {
+     "label": "pick",
+     "p": 0.0025
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img02_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      189,
+      133,
+      53,
+      48,
+      147,
+      68,
+      108,
+      10,
+      99,
+      139,
+      177,
+      0,
+      12,
+      2,
+      90,
+      80
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img02_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      163,
+      942,
+      1016,
+      939,
+      987,
+      1021,
+      932,
+      949,
+      887,
+      998,
+      980,
+      370,
+      829,
+      916,
+      34,
+      224
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img02_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      1233,
+      769,
+      401,
+      541,
+      2043,
+      1186,
+      1608,
+      116,
+      665,
+      1634,
+      523,
+      1996,
+      1432,
+      1385,
+      267,
+      1521
+     ]
+    }
+   }
+  },
+  {
+   "id": "img03",
+   "source_file": "03.jpg",
+   "image": "dl8_images/img03.jpg",
+   "top5": [
+    {
+     "label": "zebra",
+     "p": 0.9484
+    },
+    {
+     "label": "hartebeest",
+     "p": 0.0012
+    },
+    {
+     "label": "impala",
+     "p": 0.0009
+    },
+    {
+     "label": "ostrich",
+     "p": 0.0008
+    },
+    {
+     "label": "gazelle",
+     "p": 0.0007
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img03_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      41,
+      90,
+      117,
+      33,
+      17,
+      22,
+      23,
+      10,
+      113,
+      55,
+      71,
+      74,
+      157,
+      161,
+      12,
+      76
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img03_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      913,
+      910,
+      912,
+      942,
+      590,
+      184,
+      887,
+      977,
+      968,
+      1003,
+      982,
+      1051,
+      992,
+      934,
+      994,
+      957
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img03_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      404,
+      551,
+      576,
+      401,
+      1176,
+      197,
+      1164,
+      403,
+      1385,
+      437,
+      1471,
+      413,
+      1415,
+      1441,
+      470,
+      1432
+     ]
+    }
+   }
+  },
+  {
+   "id": "img04",
+   "source_file": "04.jpg",
+   "image": "dl8_images/img04.jpg",
+   "top5": [
+    {
+     "label": "espresso",
+     "p": 0.9171
+    },
+    {
+     "label": "espresso_maker",
+     "p": 0.0133
+    },
+    {
+     "label": "coffee_mug",
+     "p": 0.007
+    },
+    {
+     "label": "cup",
+     "p": 0.0056
+    },
+    {
+     "label": "coffeepot",
+     "p": 0.0039
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img04_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      133,
+      147,
+      48,
+      12,
+      108,
+      53,
+      189,
+      155,
+      176,
+      161,
+      139,
+      10,
+      157,
+      76,
+      22,
+      99
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img04_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      437,
+      619,
+      591,
+      916,
+      163,
+      572,
+      34,
+      39,
+      817,
+      402,
+      488,
+      958,
+      224,
+      998,
+      887,
+      977
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img04_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      785,
+      1611,
+      809,
+      89,
+      1879,
+      1645,
+      300,
+      1777,
+      1651,
+      401,
+      1987,
+      1857,
+      801,
+      746,
+      1101,
+      29
+     ]
+    }
+   }
+  },
+  {
+   "id": "img06",
+   "source_file": "06.jpg",
+   "image": "dl8_images/img06.jpg",
+   "top5": [
+    {
+     "label": "teapot",
+     "p": 0.9058
+    },
+    {
+     "label": "perfume",
+     "p": 0.0159
+    },
+    {
+     "label": "water_jug",
+     "p": 0.0127
+    },
+    {
+     "label": "pitcher",
+     "p": 0.0083
+    },
+    {
+     "label": "cup",
+     "p": 0.0058
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img06_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      53,
+      67,
+      102,
+      133,
+      48,
+      38,
+      139,
+      155,
+      189,
+      147,
+      99,
+      157,
+      10,
+      101,
+      108,
+      176
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img06_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      437,
+      619,
+      591,
+      916,
+      854,
+      987,
+      163,
+      1009,
+      977,
+      958,
+      939,
+      34,
+      39,
+      942,
+      887,
+      967
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img06_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      785,
+      1611,
+      809,
+      924,
+      827,
+      1541,
+      1172,
+      1809,
+      773,
+      1651,
+      973,
+      1429,
+      1923,
+      986,
+      1034,
+      29
+     ]
+    }
+   }
+  },
+  {
+   "id": "img07",
+   "source_file": "07.jpg",
+   "image": "dl8_images/img07.jpg",
+   "top5": [
+    {
+     "label": "strawberry",
+     "p": 0.943
+    },
+    {
+     "label": "trifle",
+     "p": 0.0033
+    },
+    {
+     "label": "tray",
+     "p": 0.0007
+    },
+    {
+     "label": "ice_cream",
+     "p": 0.0007
+    },
+    {
+     "label": "chocolate_sauce",
+     "p": 0.0006
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img07_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      17,
+      48,
+      74,
+      76,
+      22,
+      53,
+      67,
+      177,
+      102,
+      89,
+      117,
+      41,
+      162,
+      171,
+      153,
+      10
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img07_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      1038,
+      67,
+      887,
+      916,
+      977,
+      324,
+      939,
+      1079,
+      878,
+      188,
+      937,
+      375,
+      1058,
+      951,
+      370,
+      252
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img07_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      159,
+      193,
+      9,
+      1367,
+      1180,
+      965,
+      34,
+      1016,
+      1608,
+      792,
+      2071,
+      1591,
+      215,
+      1969,
+      1192,
+      146
+     ]
+    }
+   }
+  },
+  {
+   "id": "img08",
+   "source_file": "08.jpg",
+   "image": "dl8_images/img08.jpg",
+   "top5": [
+    {
+     "label": "pizza",
+     "p": 0.9053
+    },
+    {
+     "label": "rapeseed",
+     "p": 0.001
+    },
+    {
+     "label": "hognose_snake",
+     "p": 0.0009
+    },
+    {
+     "label": "broccoli",
+     "p": 0.0007
+    },
+    {
+     "label": "zucchini",
+     "p": 0.0006
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img08_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      41,
+      76,
+      22,
+      102,
+      0,
+      38,
+      74,
+      48,
+      117,
+      150,
+      17,
+      23,
+      162,
+      135,
+      89,
+      153
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img08_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      1044,
+      998,
+      916,
+      982,
+      987,
+      863,
+      1038,
+      188,
+      875,
+      968,
+      878,
+      954,
+      924,
+      958,
+      977,
+      853
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img08_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      598,
+      426,
+      458,
+      572,
+      262,
+      674,
+      927,
+      1918,
+      2029,
+      1078,
+      58,
+      1509,
+      1608,
+      1432,
+      752,
+      1303
+     ]
+    }
+   }
+  },
+  {
+   "id": "img09",
+   "source_file": "09.jpg",
+   "image": "dl8_images/img09.jpg",
+   "top5": [
+    {
+     "label": "Labrador_retriever",
+     "p": 0.8931
+    },
+    {
+     "label": "golden_retriever",
+     "p": 0.0144
+    },
+    {
+     "label": "Chesapeake_Bay_retriever",
+     "p": 0.0047
+    },
+    {
+     "label": "kuvasz",
+     "p": 0.0023
+    },
+    {
+     "label": "Saint_Bernard",
+     "p": 0.0016
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img09_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      76,
+      22,
+      74,
+      0,
+      102,
+      38,
+      150,
+      89,
+      162,
+      117,
+      23,
+      99,
+      177,
+      41,
+      33,
+      135
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img09_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      913,
+      1044,
+      983,
+      916,
+      909,
+      887,
+      252,
+      977,
+      992,
+      370,
+      968,
+      866,
+      942,
+      949,
+      951,
+      875
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img09_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      197,
+      892,
+      781,
+      753,
+      401,
+      1354,
+      1827,
+      1476,
+      2049,
+      1415,
+      1828,
+      1183,
+      1975,
+      1072,
+      1857,
+      842
+     ]
+    }
+   }
+  },
+  {
+   "id": "img12",
+   "source_file": "12.jpg",
+   "image": "dl8_images/img12.jpg",
+   "top5": [
+    {
+     "label": "orange",
+     "p": 0.9212
+    },
+    {
+     "label": "lemon",
+     "p": 0.0168
+    },
+    {
+     "label": "banana",
+     "p": 0.0007
+    },
+    {
+     "label": "beagle",
+     "p": 0.0004
+    },
+    {
+     "label": "rubber_eraser",
+     "p": 0.0003
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img12_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      22,
+      102,
+      150,
+      38,
+      89,
+      126,
+      162,
+      76,
+      74,
+      12,
+      10,
+      2,
+      161,
+      41,
+      189,
+      120
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img12_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      954,
+      987,
+      958,
+      998,
+      977,
+      905,
+      913,
+      951,
+      968,
+      1033,
+      887,
+      480,
+      948,
+      910,
+      983,
+      530
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img12_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      443,
+      457,
+      1897,
+      426,
+      1608,
+      1807,
+      446,
+      424,
+      545,
+      994,
+      1385,
+      1827,
+      1816,
+      2029,
+      1969,
+      1327
+     ]
+    }
+   }
+  },
+  {
+   "id": "img15",
+   "source_file": "15.jpg",
+   "image": "dl8_images/img15.jpg",
+   "top5": [
+    {
+     "label": "umbrella",
+     "p": 0.8923
+    },
+    {
+     "label": "parachute",
+     "p": 0.0016
+    },
+    {
+     "label": "mountain_tent",
+     "p": 0.0011
+    },
+    {
+     "label": "sunglasses",
+     "p": 0.0007
+    },
+    {
+     "label": "lampshade",
+     "p": 0.0005
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img15_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      155,
+      41,
+      48,
+      53,
+      23,
+      90,
+      168,
+      139,
+      17,
+      157,
+      38,
+      161,
+      143,
+      83,
+      113,
+      102
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img15_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      981,
+      1013,
+      550,
+      968,
+      857,
+      998,
+      989,
+      837,
+      916,
+      922,
+      1021,
+      942,
+      956,
+      875,
+      1000,
+      904
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img15_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      608,
+      44,
+      586,
+      1054,
+      1849,
+      1973,
+      1914,
+      1323,
+      2005,
+      1829,
+      587,
+      1867,
+      1934,
+      2002,
+      673,
+      1926
+     ]
+    }
+   }
+  },
+  {
+   "id": "img16",
+   "source_file": "16.jpg",
+   "image": "dl8_images/img16.jpg",
+   "top5": [
+    {
+     "label": "goldfish",
+     "p": 0.9328
+    },
+    {
+     "label": "tench",
+     "p": 0.0008
+    },
+    {
+     "label": "rock_beauty",
+     "p": 0.0005
+    },
+    {
+     "label": "guillotine",
+     "p": 0.0005
+    },
+    {
+     "label": "anemone_fish",
+     "p": 0.0004
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img16_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      53,
+      41,
+      102,
+      150,
+      48,
+      155,
+      168,
+      22,
+      76,
+      74,
+      38,
+      89,
+      162,
+      139,
+      12,
+      83
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img16_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      968,
+      951,
+      977,
+      942,
+      980,
+      957,
+      989,
+      998,
+      913,
+      904,
+      958,
+      863,
+      365,
+      887,
+      1003,
+      983
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img16_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      974,
+      216,
+      1490,
+      197,
+      1658,
+      1977,
+      1836,
+      1797,
+      1944,
+      1289,
+      1787,
+      1385,
+      1246,
+      1900,
+      1472,
+      2042
+     ]
+    }
+   }
+  },
+  {
+   "id": "img19",
+   "source_file": "19.jpg",
+   "image": "dl8_images/img19.jpg",
+   "top5": [
+    {
+     "label": "backpack",
+     "p": 0.9202
+    },
+    {
+     "label": "sleeping_bag",
+     "p": 0.0021
+    },
+    {
+     "label": "mailbag",
+     "p": 0.0014
+    },
+    {
+     "label": "rubber_eraser",
+     "p": 0.0006
+    },
+    {
+     "label": "reflex_camera",
+     "p": 0.0006
+    }
+   ],
+   "fmaps": {
+    "early": {
+     "file": "dl8_fmaps/img19_activation_4.png",
+     "layer": "activation_4",
+     "channels_shown": [
+      65,
+      126,
+      41,
+      117,
+      139,
+      23,
+      102,
+      90,
+      10,
+      71,
+      17,
+      22,
+      168,
+      150,
+      59,
+      165
+     ]
+    },
+    "middle": {
+     "file": "dl8_fmaps/img19_block17_10_ac.png",
+     "layer": "block17_10_ac",
+     "channels_shown": [
+      968,
+      887,
+      1021,
+      982,
+      976,
+      958,
+      854,
+      955,
+      913,
+      252,
+      886,
+      370,
+      977,
+      939,
+      858,
+      590
+     ]
+    },
+    "late": {
+     "file": "dl8_fmaps/img19_block8_5_ac.png",
+     "layer": "block8_5_ac",
+     "channels_shown": [
+      315,
+      914,
+      197,
+      401,
+      364,
+      831,
+      1370,
+      342,
+      75,
+      1827,
+      893,
+      1696,
+      657,
+      1276,
+      1632,
+      1202
+     ]
+    }
+   }
+  }
+ ]
+}
