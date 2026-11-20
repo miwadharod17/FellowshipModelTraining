@@ -88,8 +88,8 @@ def label_agreement(path, model, x, n_classes):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--only', default=None, help="e.g. digit_c2 or shape")
-    ap.add_argument('--epochs', type=int, default=12)
-    ap.add_argument('--no-aug', action='store_true', help='turn off shift/rotation augmentation')
+    ap.add_argument('--epochs', type=int, default=None, help='default: 12 for digits, 20 for shapes')
+    ap.add_argument('--no-aug', action='store_true', help='turn off shift/rotation augmentation (digits only use it)')
     args = ap.parse_args()
     assert os.path.isdir('out/golden'), 'Run this from the repo root (folder containing out/).'
 
@@ -111,18 +111,22 @@ def main():
         (xtr, ytr), (xv, yv), (xte, yte), names = cache[kind]
         k = len(names)
 
+        # augmentation helps hand-drawn digits but HURTS the shape model (shapes are already generated at random
+        # positions and rotations, and resampling blurs their crisp edges), so only digits use it
+        use_aug = (kind == 'digit') and not args.no_aug
+        epochs = args.epochs or (20 if kind == 'shape' else 12)
         set_seed()
         model = build(n_conv, k)
         # training wrapper: random shift/rotation (only active while training), shares weights
         tin = keras.Input(shape=(28, 28, 1))
         a = tin
-        if not args.no_aug:
+        if use_aug:
             a = keras.layers.RandomTranslation(0.1, 0.1, fill_mode='constant')(a)
             a = keras.layers.RandomRotation(0.06, fill_mode='constant')(a)
         train_model = keras.Model(tin, model(a)[0])
         train_model.compile(optimizer=keras.optimizers.Adam(1e-3),
                             loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-        hist = train_model.fit(xtr, ytr, batch_size=BATCH, epochs=args.epochs,
+        hist = train_model.fit(xtr, ytr, batch_size=BATCH, epochs=epochs,
                                validation_data=(xv, yv), verbose=2)
 
         probs = model.predict(xte, batch_size=500, verbose=0)[0]
@@ -163,8 +167,8 @@ def main():
         write_metrics(
             name, 'mnist 55000/5000/10000' if kind == 'digit' else 'shapes(6000) train, shapes(500, seed=7) test',
             {'conv_layers': n_conv, 'filters': FILTERS[:n_conv], 'classes': names,
-             'epochs': args.epochs, 'batch_size': BATCH, 'optimizer': 'adam 1e-3',
-             'augmentation': not args.no_aug, 'params': int(model.count_params())},
+             'epochs': epochs, 'batch_size': BATCH, 'optimizer': 'adam 1e-3',
+             'augmentation': use_aug, 'params': int(model.count_params())},
             loss_curve=[float(v) for v in hist.history['loss']],
             val_loss_curve=[float(v) for v in hist.history['val_loss']],
             acc_curve=[float(v) for v in hist.history['accuracy']],
