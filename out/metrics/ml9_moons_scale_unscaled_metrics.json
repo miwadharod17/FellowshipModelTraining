@@ -1,0 +1,20 @@
+{
+  "name": "ml9_moons_scale_unscaled",
+  "date": "2026-11-16",
+  "seed": 42,
+  "dataset": "moons_main",
+  "settings": {
+    "kernel": "rbf",
+    "C": 1,
+    "gamma": 1,
+    "scaling": "unscaled"
+  },
+  "train_accuracy": 0.9761904761904762,
+  "test_accuracy": 0.8333333333333334,
+  "n_support": [
+    98,
+    97
+  ],
+  "free_count": 128,
+  "bounded_count": 67
+}

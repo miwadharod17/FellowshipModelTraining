@@ -1,0 +1,62 @@
+{
+  "arrays": [
+    {
+      "name": "reference_points",
+      "shape": [
+        124,
+        13
+      ],
+      "offset": 0
+    },
+    {
+      "name": "reference_labels",
+      "shape": [
+        124
+      ],
+      "offset": 1612
+    },
+    {
+      "name": "train_mean",
+      "shape": [
+        13
+      ],
+      "offset": 1736
+    },
+    {
+      "name": "train_scale",
+      "shape": [
+        13
+      ],
+      "offset": 1749
+    },
+    {
+      "name": "test_points",
+      "shape": [
+        54,
+        13
+      ],
+      "offset": 1762
+    },
+    {
+      "name": "test_labels",
+      "shape": [
+        54
+      ],
+      "offset": 2464
+    },
+    {
+      "name": "feature_count",
+      "shape": [
+        1
+      ],
+      "offset": 2518
+    }
+  ],
+  "meta": {
+    "dataset": "wine",
+    "preprocessing": "Training points already include stretch/noise when applicable; toggle standardization via stored train-only mean/scale",
+    "noise_feature_count": 0,
+    "seed": 42,
+    "engine": "engine_distance_b1.tflite"
+  }
+}

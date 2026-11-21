@@ -1,0 +1,68 @@
+{
+  "arrays": [
+    {
+      "name": "coef_scaled",
+      "shape": [
+        1,
+        2
+      ],
+      "offset": 0
+    },
+    {
+      "name": "intercept_scaled",
+      "shape": [
+        1
+      ],
+      "offset": 2
+    },
+    {
+      "name": "coef_original",
+      "shape": [
+        2
+      ],
+      "offset": 3
+    },
+    {
+      "name": "intercept_original",
+      "shape": [
+        1
+      ],
+      "offset": 5
+    },
+    {
+      "name": "mean",
+      "shape": [
+        2
+      ],
+      "offset": 6
+    },
+    {
+      "name": "scale",
+      "shape": [
+        2
+      ],
+      "offset": 8
+    },
+    {
+      "name": "test_probs",
+      "shape": [
+        120
+      ],
+      "offset": 10
+    },
+    {
+      "name": "test_labels",
+      "shape": [
+        120
+      ],
+      "offset": 130
+    }
+  ],
+  "meta": {
+    "dataset": "separable_blobs",
+    "C": 100,
+    "preprocessing": "2 features standardized using stored mean/scale",
+    "seed": 42,
+    "engine": "engine_linear_b1.tflite"
+  }
+}

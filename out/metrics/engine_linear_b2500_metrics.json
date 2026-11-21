@@ -1,0 +1,32 @@
+{
+  "name": "engine_linear_b2500",
+  "date": "2026-11-21",
+  "seed": 42,
+  "kind": "engine",
+  "parity": "passed",
+  "inputs": {
+    "features": [
+      2500,
+      32
+    ],
+    "weights": [
+      32,
+      4
+    ],
+    "bias": [
+      4
+    ],
+    "feature_mask": [
+      32
+    ],
+    "class_mask": [
+      4
+    ]
+  },
+  "outputs": {
+    "scores": [
+      2500,
+      4
+    ]
+  }
+}

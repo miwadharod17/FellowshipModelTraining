@@ -1,0 +1,38 @@
+{
+  "name": "engine_kernel_b1",
+  "date": "2026-11-21",
+  "seed": 42,
+  "kind": "engine",
+  "parity": "passed",
+  "inputs": {
+    "features": [
+      1,
+      2
+    ],
+    "support_vectors": [
+      256,
+      2
+    ],
+    "dual_coef": [
+      256
+    ],
+    "bias": [
+      1
+    ],
+    "gamma": [
+      1
+    ],
+    "support_count": [
+      1
+    ],
+    "kernel_code": [
+      1
+    ]
+  },
+  "outputs": {
+    "decision": [
+      1,
+      1
+    ]
+  }
+}

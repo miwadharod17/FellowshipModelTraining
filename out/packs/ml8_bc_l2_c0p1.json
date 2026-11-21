@@ -1,0 +1,95 @@
+{
+  "arrays": [
+    {
+      "name": "coef_scaled",
+      "shape": [
+        1,
+        10
+      ],
+      "offset": 0
+    },
+    {
+      "name": "intercept_scaled",
+      "shape": [
+        1
+      ],
+      "offset": 10
+    },
+    {
+      "name": "coef_original",
+      "shape": [
+        10
+      ],
+      "offset": 11
+    },
+    {
+      "name": "intercept_original",
+      "shape": [
+        1
+      ],
+      "offset": 21
+    },
+    {
+      "name": "mean",
+      "shape": [
+        10
+      ],
+      "offset": 22
+    },
+    {
+      "name": "scale",
+      "shape": [
+        10
+      ],
+      "offset": 32
+    },
+    {
+      "name": "test_probs",
+      "shape": [
+        171
+      ],
+      "offset": 42
+    },
+    {
+      "name": "test_labels",
+      "shape": [
+        171
+      ],
+      "offset": 213
+    },
+    {
+      "name": "calibration_mean",
+      "shape": [
+        10
+      ],
+      "offset": 384
+    },
+    {
+      "name": "calibration_fraction",
+      "shape": [
+        10
+      ],
+      "offset": 394
+    }
+  ],
+  "meta": {
+    "dataset": "breast_cancer_mean10",
+    "penalty": "l2",
+    "C": 0.1,
+    "preprocessing": "10 mean features standardized with stored train-only mean/scale",
+    "feature_names": [
+      "mean radius",
+      "mean texture",
+      "mean perimeter",
+      "mean area",
+      "mean smoothness",
+      "mean compactness",
+      "mean concavity",
+      "mean concave points",
+      "mean symmetry",
+      "mean fractal dimension"
+    ],
+    "seed": 42,
+    "engine": "engine_linear_b1.tflite"
+  }
+}

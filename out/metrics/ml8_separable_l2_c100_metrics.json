@@ -1,0 +1,13 @@
+{
+  "name": "ml8_separable_l2_c100",
+  "date": "2026-11-16",
+  "seed": 42,
+  "dataset": "separable_blobs",
+  "settings": {
+    "C": 100
+  },
+  "train_accuracy": 1.0,
+  "test_accuracy": 1.0,
+  "coef_norm": 6.516369992355409,
+  "converged": true
+}

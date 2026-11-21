@@ -1,0 +1,123 @@
+{
+  "name": "ml3_blobs",
+  "date": "2026-11-16",
+  "seed": 42,
+  "dataset": "blobs",
+  "settings": {
+    "k_values": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "seeding": [
+      "random",
+      "k-means++"
+    ],
+    "restarts": 10,
+    "max_steps": 30
+  },
+  "summary": [
+    {
+      "k": 2,
+      "initialization": "random",
+      "best_restart": 1,
+      "objective": 4157.45849609375,
+      "silhouette": 0.5129861831665039
+    },
+    {
+      "k": 2,
+      "initialization": "k-means++",
+      "best_restart": 0,
+      "objective": 4157.45849609375,
+      "silhouette": 0.5129861831665039
+    },
+    {
+      "k": 3,
+      "initialization": "random",
+      "best_restart": 0,
+      "objective": 838.8970947265625,
+      "silhouette": 0.7324987649917603
+    },
+    {
+      "k": 3,
+      "initialization": "k-means++",
+      "best_restart": 0,
+      "objective": 838.8970947265625,
+      "silhouette": 0.7324987649917603
+    },
+    {
+      "k": 4,
+      "initialization": "random",
+      "best_restart": 8,
+      "objective": 732.8226318359375,
+      "silhouette": 0.5942838191986084
+    },
+    {
+      "k": 4,
+      "initialization": "k-means++",
+      "best_restart": 5,
+      "objective": 732.8226318359375,
+      "silhouette": 0.5942838191986084
+    },
+    {
+      "k": 5,
+      "initialization": "random",
+      "best_restart": 9,
+      "objective": 639.726318359375,
+      "silhouette": 0.4526127576828003
+    },
+    {
+      "k": 5,
+      "initialization": "k-means++",
+      "best_restart": 5,
+      "objective": 639.5711669921875,
+      "silhouette": 0.45405080914497375
+    },
+    {
+      "k": 6,
+      "initialization": "random",
+      "best_restart": 6,
+      "objective": 546.2552490234375,
+      "silhouette": 0.3294270932674408
+    },
+    {
+      "k": 6,
+      "initialization": "k-means++",
+      "best_restart": 4,
+      "objective": 546.2731323242188,
+      "silhouette": 0.3298530876636505
+    },
+    {
+      "k": 7,
+      "initialization": "random",
+      "best_restart": 7,
+      "objective": 476.1083679199219,
+      "silhouette": 0.33437657356262207
+    },
+    {
+      "k": 7,
+      "initialization": "k-means++",
+      "best_restart": 7,
+      "objective": 480.34075927734375,
+      "silhouette": 0.3334038257598877
+    },
+    {
+      "k": 8,
+      "initialization": "random",
+      "best_restart": 1,
+      "objective": 425.44989013671875,
+      "silhouette": 0.35116124153137207
+    },
+    {
+      "k": 8,
+      "initialization": "k-means++",
+      "best_restart": 2,
+      "objective": 423.9965515136719,
+      "silhouette": 0.33558177947998047
+    }
+  ]
+}

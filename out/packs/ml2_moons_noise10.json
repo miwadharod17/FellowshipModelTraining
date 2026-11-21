@@ -1,0 +1,62 @@
+{
+  "arrays": [
+    {
+      "name": "reference_points",
+      "shape": [
+        210,
+        12
+      ],
+      "offset": 0
+    },
+    {
+      "name": "reference_labels",
+      "shape": [
+        210
+      ],
+      "offset": 2520
+    },
+    {
+      "name": "train_mean",
+      "shape": [
+        12
+      ],
+      "offset": 2730
+    },
+    {
+      "name": "train_scale",
+      "shape": [
+        12
+      ],
+      "offset": 2742
+    },
+    {
+      "name": "test_points",
+      "shape": [
+        90,
+        12
+      ],
+      "offset": 2754
+    },
+    {
+      "name": "test_labels",
+      "shape": [
+        90
+      ],
+      "offset": 3834
+    },
+    {
+      "name": "feature_count",
+      "shape": [
+        1
+      ],
+      "offset": 3924
+    }
+  ],
+  "meta": {
+    "dataset": "moons_noise10",
+    "preprocessing": "Training points already include stretch/noise when applicable; toggle standardization via stored train-only mean/scale",
+    "noise_feature_count": 10,
+    "seed": 42,
+    "engine": "engine_distance_b1.tflite"
+  }
+}

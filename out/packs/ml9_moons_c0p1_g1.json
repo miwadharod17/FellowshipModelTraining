@@ -1,0 +1,94 @@
+{
+  "arrays": [
+    {
+      "name": "support_vectors",
+      "shape": [
+        121,
+        2
+      ],
+      "offset": 0
+    },
+    {
+      "name": "dual_coef",
+      "shape": [
+        121
+      ],
+      "offset": 242
+    },
+    {
+      "name": "intercept",
+      "shape": [
+        1
+      ],
+      "offset": 363
+    },
+    {
+      "name": "gamma",
+      "shape": [
+        1
+      ],
+      "offset": 364
+    },
+    {
+      "name": "support_indices",
+      "shape": [
+        121
+      ],
+      "offset": 365
+    },
+    {
+      "name": "alphas",
+      "shape": [
+        121
+      ],
+      "offset": 486
+    },
+    {
+      "name": "free_mask",
+      "shape": [
+        121
+      ],
+      "offset": 607
+    },
+    {
+      "name": "bounded_mask",
+      "shape": [
+        121
+      ],
+      "offset": 728
+    },
+    {
+      "name": "platt_A",
+      "shape": [
+        1
+      ],
+      "offset": 849
+    },
+    {
+      "name": "platt_B",
+      "shape": [
+        1
+      ],
+      "offset": 850
+    },
+    {
+      "name": "classes",
+      "shape": [
+        2
+      ],
+      "offset": 851
+    }
+  ],
+  "meta": {
+    "dataset": "moons_main",
+    "kernel": "rbf",
+    "C": 0.1,
+    "gamma": 1,
+    "scaling": "none",
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "n_support": 121,
+    "feature_count": 2,
+    "seed": 42,
+    "engine": "engine_kernel_b1.tflite"
+  }
+}

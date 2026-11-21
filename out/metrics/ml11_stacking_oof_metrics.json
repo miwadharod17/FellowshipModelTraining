@@ -1,0 +1,18 @@
+{
+  "name": "ml11_stacking_oof",
+  "date": "2026-11-16",
+  "seed": 42,
+  "dataset": "moons_main",
+  "settings": {
+    "mode": "oof",
+    "base_learners": [
+      "knn_1",
+      "svc_c100_g10",
+      "forest_200_depth12_m2"
+    ]
+  },
+  "meta_train_accuracy": 0.8857142857142857,
+  "heldout_accuracy": 0.9333333333333333,
+  "heldout_log_loss": 0.23746306801094022,
+  "leakage_warning": false
+}

@@ -1,0 +1,78 @@
+{
+  "arrays": [
+    {
+      "name": "points",
+      "shape": [
+        600,
+        2
+      ],
+      "offset": 0
+    },
+    {
+      "name": "centroid_history",
+      "shape": [
+        7,
+        2,
+        10,
+        30,
+        8,
+        2
+      ],
+      "offset": 1200
+    },
+    {
+      "name": "objective_history",
+      "shape": [
+        7,
+        2,
+        10,
+        30
+      ],
+      "offset": 68400
+    },
+    {
+      "name": "iteration_counts",
+      "shape": [
+        7,
+        2,
+        10
+      ],
+      "offset": 72600
+    },
+    {
+      "name": "k_values",
+      "shape": [
+        7
+      ],
+      "offset": 72740
+    },
+    {
+      "name": "initialization_codes",
+      "shape": [
+        2
+      ],
+      "offset": 72747
+    },
+    {
+      "name": "restart_count",
+      "shape": [
+        1
+      ],
+      "offset": 72749
+    }
+  ],
+  "meta": {
+    "dataset": "blobs_out10",
+    "preprocessing": "2D points; select recorded K, seed method, restart and iteration",
+    "history_shape": [
+      7,
+      2,
+      10,
+      30,
+      8,
+      2
+    ],
+    "seed": 42,
+    "engine": "engine_distance_b1.tflite"
+  }
+}

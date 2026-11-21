@@ -1,0 +1,109 @@
+{
+  "arrays": [
+    {
+      "name": "support_vectors",
+      "shape": [
+        155,
+        2
+      ],
+      "offset": 0
+    },
+    {
+      "name": "dual_coef",
+      "shape": [
+        155
+      ],
+      "offset": 310
+    },
+    {
+      "name": "intercept",
+      "shape": [
+        1
+      ],
+      "offset": 465
+    },
+    {
+      "name": "gamma",
+      "shape": [
+        1
+      ],
+      "offset": 466
+    },
+    {
+      "name": "support_indices",
+      "shape": [
+        155
+      ],
+      "offset": 467
+    },
+    {
+      "name": "alphas",
+      "shape": [
+        155
+      ],
+      "offset": 622
+    },
+    {
+      "name": "free_mask",
+      "shape": [
+        155
+      ],
+      "offset": 777
+    },
+    {
+      "name": "bounded_mask",
+      "shape": [
+        155
+      ],
+      "offset": 932
+    },
+    {
+      "name": "platt_A",
+      "shape": [
+        1
+      ],
+      "offset": 1087
+    },
+    {
+      "name": "platt_B",
+      "shape": [
+        1
+      ],
+      "offset": 1088
+    },
+    {
+      "name": "classes",
+      "shape": [
+        2
+      ],
+      "offset": 1089
+    },
+    {
+      "name": "engine_support_vectors",
+      "shape": [
+        1,
+        2
+      ],
+      "offset": 1091
+    },
+    {
+      "name": "engine_dual_coef",
+      "shape": [
+        1
+      ],
+      "offset": 1093
+    }
+  ],
+  "meta": {
+    "dataset": "overlap_blobs",
+    "kernel": "linear",
+    "C": 100,
+    "gamma": null,
+    "scaling": "none",
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "n_support": 155,
+    "feature_count": 2,
+    "seed": 42,
+    "engine": "engine_kernel_b1.tflite"
+  }
+}

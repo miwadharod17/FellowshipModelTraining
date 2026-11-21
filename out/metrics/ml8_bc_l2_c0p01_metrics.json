@@ -1,0 +1,24 @@
+{
+  "name": "ml8_bc_l2_c0p01",
+  "date": "2026-11-16",
+  "seed": 42,
+  "dataset": "breast_cancer_mean10",
+  "settings": {
+    "penalty": "l2",
+    "C": 0.01
+  },
+  "train_accuracy": 0.9246231155778895,
+  "test_accuracy": 0.9298245614035088,
+  "test_log_loss": 0.27765800622227327,
+  "confusion_matrix": [
+    [
+      54,
+      10
+    ],
+    [
+      2,
+      105
+    ]
+  ],
+  "converged": true
+}

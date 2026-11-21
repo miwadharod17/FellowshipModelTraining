@@ -1,0 +1,36 @@
+{
+  "name": "engine_distance_b2500",
+  "date": "2026-11-21",
+  "seed": 42,
+  "kind": "engine",
+  "parity": "passed",
+  "inputs": {
+    "features": [
+      2500,
+      13
+    ],
+    "reference_points": [
+      1000,
+      13
+    ],
+    "feature_weights": [
+      13
+    ],
+    "reference_count": [
+      1
+    ],
+    "k": [
+      1
+    ]
+  },
+  "outputs": {
+    "distances": [
+      2500,
+      30
+    ],
+    "indices": [
+      2500,
+      30
+    ]
+  }
+}

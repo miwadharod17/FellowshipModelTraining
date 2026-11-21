@@ -1,0 +1,5803 @@
+[
+  {
+    "id": "ml2_moons_noise10",
+    "type": "pack",
+    "version": 1,
+    "file": "ml2_moons_noise10.bin",
+    "sha256": "111f46b07d53b333fc710449ce7096414132de373e480fb52fa60282df46732d",
+    "index_file": "ml2_moons_noise10.json",
+    "index_sha256": "5d5eb4c7dd3929c3ac02c1fffc1f329b6a27f2002a2dcb2859f00280c82e4894",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_points",
+        "shape": [
+          1000,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_weights",
+        "shape": [
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "k",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "distances",
+        "shape": [
+          1,
+          30
+        ]
+      },
+      {
+        "name": "indices",
+        "shape": [
+          1,
+          30
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Training points already include stretch/noise when applicable; toggle standardization via stored train-only mean/scale",
+    "engine": "engine_distance_b1.tflite",
+    "metrics_file": "ml2_moons_noise10_metrics.json",
+    "arrays": [
+      {
+        "name": "reference_points",
+        "shape": [
+          210,
+          12
+        ],
+        "offset": 0
+      },
+      {
+        "name": "reference_labels",
+        "shape": [
+          210
+        ],
+        "offset": 2520
+      },
+      {
+        "name": "train_mean",
+        "shape": [
+          12
+        ],
+        "offset": 2730
+      },
+      {
+        "name": "train_scale",
+        "shape": [
+          12
+        ],
+        "offset": 2742
+      },
+      {
+        "name": "test_points",
+        "shape": [
+          90,
+          12
+        ],
+        "offset": 2754
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          90
+        ],
+        "offset": 3834
+      },
+      {
+        "name": "feature_count",
+        "shape": [
+          1
+        ],
+        "offset": 3924
+      }
+    ],
+    "engine_variants": [
+      "engine_distance_b1.tflite",
+      "engine_distance_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml2_wine",
+    "type": "pack",
+    "version": 1,
+    "file": "ml2_wine.bin",
+    "sha256": "e5ff45fa38ad4c6148df9976eb17301214e3dbcffaf7c0535ac8e18b2e9198c9",
+    "index_file": "ml2_wine.json",
+    "index_sha256": "2aee2794dd5d67e7afa3d4f6bad2a4f1216b5496d94483318ea70ceffd683636",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_points",
+        "shape": [
+          1000,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_weights",
+        "shape": [
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "k",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "distances",
+        "shape": [
+          1,
+          30
+        ]
+      },
+      {
+        "name": "indices",
+        "shape": [
+          1,
+          30
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1",
+      "2"
+    ],
+    "preprocessing": "Training points already include stretch/noise when applicable; toggle standardization via stored train-only mean/scale",
+    "engine": "engine_distance_b1.tflite",
+    "metrics_file": "ml2_wine_metrics.json",
+    "arrays": [
+      {
+        "name": "reference_points",
+        "shape": [
+          124,
+          13
+        ],
+        "offset": 0
+      },
+      {
+        "name": "reference_labels",
+        "shape": [
+          124
+        ],
+        "offset": 1612
+      },
+      {
+        "name": "train_mean",
+        "shape": [
+          13
+        ],
+        "offset": 1736
+      },
+      {
+        "name": "train_scale",
+        "shape": [
+          13
+        ],
+        "offset": 1749
+      },
+      {
+        "name": "test_points",
+        "shape": [
+          54,
+          13
+        ],
+        "offset": 1762
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          54
+        ],
+        "offset": 2464
+      },
+      {
+        "name": "feature_count",
+        "shape": [
+          1
+        ],
+        "offset": 2518
+      }
+    ],
+    "engine_variants": [
+      "engine_distance_b1.tflite",
+      "engine_distance_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml3_blobs",
+    "type": "pack",
+    "version": 1,
+    "file": "ml3_blobs.bin",
+    "sha256": "f1930d68e2e5fed45842f048c71a56d1056db836e5bd8f6ddc0850ca520db44d",
+    "index_file": "ml3_blobs.json",
+    "index_sha256": "930e8a460accb929ef0699754084c1a8f6d5362740aaf2eff6cae88acdd7ac00",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_points",
+        "shape": [
+          1000,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_weights",
+        "shape": [
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "k",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "distances",
+        "shape": [
+          1,
+          30
+        ]
+      },
+      {
+        "name": "indices",
+        "shape": [
+          1,
+          30
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "2D points; select recorded K, seed method, restart and iteration",
+    "engine": "engine_distance_b1.tflite",
+    "metrics_file": "ml3_blobs_metrics.json",
+    "arrays": [
+      {
+        "name": "points",
+        "shape": [
+          600,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "centroid_history",
+        "shape": [
+          7,
+          2,
+          10,
+          30,
+          8,
+          2
+        ],
+        "offset": 1200
+      },
+      {
+        "name": "objective_history",
+        "shape": [
+          7,
+          2,
+          10,
+          30
+        ],
+        "offset": 68400
+      },
+      {
+        "name": "iteration_counts",
+        "shape": [
+          7,
+          2,
+          10
+        ],
+        "offset": 72600
+      },
+      {
+        "name": "k_values",
+        "shape": [
+          7
+        ],
+        "offset": 72740
+      },
+      {
+        "name": "initialization_codes",
+        "shape": [
+          2
+        ],
+        "offset": 72747
+      },
+      {
+        "name": "restart_count",
+        "shape": [
+          1
+        ],
+        "offset": 72749
+      }
+    ],
+    "engine_variants": [
+      "engine_distance_b1.tflite",
+      "engine_distance_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml3_moons",
+    "type": "pack",
+    "version": 1,
+    "file": "ml3_moons.bin",
+    "sha256": "cf4019de3ac1732eb9583e7fb8b69ad04b3d81dc7139415a27b69598bf262f8e",
+    "index_file": "ml3_moons.json",
+    "index_sha256": "224828ab47e08284eb0ddc9f06919f6764c79dc418818b05a40b1f14d5783c03",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_points",
+        "shape": [
+          1000,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_weights",
+        "shape": [
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "k",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "distances",
+        "shape": [
+          1,
+          30
+        ]
+      },
+      {
+        "name": "indices",
+        "shape": [
+          1,
+          30
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "2D points; select recorded K, seed method, restart and iteration",
+    "engine": "engine_distance_b1.tflite",
+    "metrics_file": "ml3_moons_metrics.json",
+    "arrays": [
+      {
+        "name": "points",
+        "shape": [
+          600,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "centroid_history",
+        "shape": [
+          7,
+          2,
+          10,
+          30,
+          8,
+          2
+        ],
+        "offset": 1200
+      },
+      {
+        "name": "objective_history",
+        "shape": [
+          7,
+          2,
+          10,
+          30
+        ],
+        "offset": 68400
+      },
+      {
+        "name": "iteration_counts",
+        "shape": [
+          7,
+          2,
+          10
+        ],
+        "offset": 72600
+      },
+      {
+        "name": "k_values",
+        "shape": [
+          7
+        ],
+        "offset": 72740
+      },
+      {
+        "name": "initialization_codes",
+        "shape": [
+          2
+        ],
+        "offset": 72747
+      },
+      {
+        "name": "restart_count",
+        "shape": [
+          1
+        ],
+        "offset": 72749
+      }
+    ],
+    "engine_variants": [
+      "engine_distance_b1.tflite",
+      "engine_distance_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml3_rings",
+    "type": "pack",
+    "version": 1,
+    "file": "ml3_rings.bin",
+    "sha256": "62e3e6e6cb8343aa382dd69e966dd1c68c5c145498587dc20b1441f15d3c5c03",
+    "index_file": "ml3_rings.json",
+    "index_sha256": "6cf7ea9524bc391b0c7bf59803bff2511a3b27cea4b5dbca8772d11dc9e8b5bb",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_points",
+        "shape": [
+          1000,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_weights",
+        "shape": [
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "k",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "distances",
+        "shape": [
+          1,
+          30
+        ]
+      },
+      {
+        "name": "indices",
+        "shape": [
+          1,
+          30
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "2D points; select recorded K, seed method, restart and iteration",
+    "engine": "engine_distance_b1.tflite",
+    "metrics_file": "ml3_rings_metrics.json",
+    "arrays": [
+      {
+        "name": "points",
+        "shape": [
+          600,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "centroid_history",
+        "shape": [
+          7,
+          2,
+          10,
+          30,
+          8,
+          2
+        ],
+        "offset": 1200
+      },
+      {
+        "name": "objective_history",
+        "shape": [
+          7,
+          2,
+          10,
+          30
+        ],
+        "offset": 68400
+      },
+      {
+        "name": "iteration_counts",
+        "shape": [
+          7,
+          2,
+          10
+        ],
+        "offset": 72600
+      },
+      {
+        "name": "k_values",
+        "shape": [
+          7
+        ],
+        "offset": 72740
+      },
+      {
+        "name": "initialization_codes",
+        "shape": [
+          2
+        ],
+        "offset": 72747
+      },
+      {
+        "name": "restart_count",
+        "shape": [
+          1
+        ],
+        "offset": 72749
+      }
+    ],
+    "engine_variants": [
+      "engine_distance_b1.tflite",
+      "engine_distance_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml3_blobs_out5",
+    "type": "pack",
+    "version": 1,
+    "file": "ml3_blobs_out5.bin",
+    "sha256": "3a316a9db2ad98e909e9762a1d8c02228d864cb153986fffa27703a2f808fc47",
+    "index_file": "ml3_blobs_out5.json",
+    "index_sha256": "320b94821bcea1c55c4e33a209e63b57ce5056483a52c7e890e10f6b167571aa",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_points",
+        "shape": [
+          1000,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_weights",
+        "shape": [
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "k",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "distances",
+        "shape": [
+          1,
+          30
+        ]
+      },
+      {
+        "name": "indices",
+        "shape": [
+          1,
+          30
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "2D points; select recorded K, seed method, restart and iteration",
+    "engine": "engine_distance_b1.tflite",
+    "metrics_file": "ml3_blobs_out5_metrics.json",
+    "arrays": [
+      {
+        "name": "points",
+        "shape": [
+          600,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "centroid_history",
+        "shape": [
+          7,
+          2,
+          10,
+          30,
+          8,
+          2
+        ],
+        "offset": 1200
+      },
+      {
+        "name": "objective_history",
+        "shape": [
+          7,
+          2,
+          10,
+          30
+        ],
+        "offset": 68400
+      },
+      {
+        "name": "iteration_counts",
+        "shape": [
+          7,
+          2,
+          10
+        ],
+        "offset": 72600
+      },
+      {
+        "name": "k_values",
+        "shape": [
+          7
+        ],
+        "offset": 72740
+      },
+      {
+        "name": "initialization_codes",
+        "shape": [
+          2
+        ],
+        "offset": 72747
+      },
+      {
+        "name": "restart_count",
+        "shape": [
+          1
+        ],
+        "offset": 72749
+      }
+    ],
+    "engine_variants": [
+      "engine_distance_b1.tflite",
+      "engine_distance_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml3_blobs_out10",
+    "type": "pack",
+    "version": 1,
+    "file": "ml3_blobs_out10.bin",
+    "sha256": "749b8780a41cc7e4dbb953ef8227f642b2f5f6efa562d724aba90fb574e21712",
+    "index_file": "ml3_blobs_out10.json",
+    "index_sha256": "f3b37ffae7ee95789b0f4193d3e363eec0dedd21b262a7800d0dfb4bb7879999",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_points",
+        "shape": [
+          1000,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_weights",
+        "shape": [
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "k",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "distances",
+        "shape": [
+          1,
+          30
+        ]
+      },
+      {
+        "name": "indices",
+        "shape": [
+          1,
+          30
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "2D points; select recorded K, seed method, restart and iteration",
+    "engine": "engine_distance_b1.tflite",
+    "metrics_file": "ml3_blobs_out10_metrics.json",
+    "arrays": [
+      {
+        "name": "points",
+        "shape": [
+          600,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "centroid_history",
+        "shape": [
+          7,
+          2,
+          10,
+          30,
+          8,
+          2
+        ],
+        "offset": 1200
+      },
+      {
+        "name": "objective_history",
+        "shape": [
+          7,
+          2,
+          10,
+          30
+        ],
+        "offset": 68400
+      },
+      {
+        "name": "iteration_counts",
+        "shape": [
+          7,
+          2,
+          10
+        ],
+        "offset": 72600
+      },
+      {
+        "name": "k_values",
+        "shape": [
+          7
+        ],
+        "offset": 72740
+      },
+      {
+        "name": "initialization_codes",
+        "shape": [
+          2
+        ],
+        "offset": 72747
+      },
+      {
+        "name": "restart_count",
+        "shape": [
+          1
+        ],
+        "offset": 72749
+      }
+    ],
+    "engine_variants": [
+      "engine_distance_b1.tflite",
+      "engine_distance_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_bc_l1_c0p01",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_bc_l1_c0p01.bin",
+    "sha256": "274f48eb2093c4f63bdc8f097170b29b0c797ea3c9eebe8ff4f272ec4d1a57ac",
+    "index_file": "ml8_bc_l1_c0p01.json",
+    "index_sha256": "f10dcd2cc2949fe4b2f67817be4b06bff8dbef5dadd2a0eae1172d908cad3265",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "malignant",
+      "benign"
+    ],
+    "preprocessing": "10 mean features standardized with stored train-only mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_bc_l1_c0p01_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          10
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 10
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          10
+        ],
+        "offset": 11
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 21
+      },
+      {
+        "name": "mean",
+        "shape": [
+          10
+        ],
+        "offset": 22
+      },
+      {
+        "name": "scale",
+        "shape": [
+          10
+        ],
+        "offset": 32
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          171
+        ],
+        "offset": 42
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          171
+        ],
+        "offset": 213
+      },
+      {
+        "name": "calibration_mean",
+        "shape": [
+          7
+        ],
+        "offset": 384
+      },
+      {
+        "name": "calibration_fraction",
+        "shape": [
+          7
+        ],
+        "offset": 391
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_bc_l1_c0p1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_bc_l1_c0p1.bin",
+    "sha256": "53bca41f943338e45027684ac6d1f40a30c6fddde2f28478c480f438b528b308",
+    "index_file": "ml8_bc_l1_c0p1.json",
+    "index_sha256": "fa2787d4795bf354f08aaba1660ea95c93461e8d3454e1c42dd472631f4be96f",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "malignant",
+      "benign"
+    ],
+    "preprocessing": "10 mean features standardized with stored train-only mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_bc_l1_c0p1_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          10
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 10
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          10
+        ],
+        "offset": 11
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 21
+      },
+      {
+        "name": "mean",
+        "shape": [
+          10
+        ],
+        "offset": 22
+      },
+      {
+        "name": "scale",
+        "shape": [
+          10
+        ],
+        "offset": 32
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          171
+        ],
+        "offset": 42
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          171
+        ],
+        "offset": 213
+      },
+      {
+        "name": "calibration_mean",
+        "shape": [
+          10
+        ],
+        "offset": 384
+      },
+      {
+        "name": "calibration_fraction",
+        "shape": [
+          10
+        ],
+        "offset": 394
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_bc_l1_c1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_bc_l1_c1.bin",
+    "sha256": "574ef226c0cd6e29004878f8493a3b72395582c717fe951063576c291c9797b7",
+    "index_file": "ml8_bc_l1_c1.json",
+    "index_sha256": "60687bba187cde33c41e1fa725dc30d69a4610b6606ef316fb4e67f07c5e38b9",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "malignant",
+      "benign"
+    ],
+    "preprocessing": "10 mean features standardized with stored train-only mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_bc_l1_c1_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          10
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 10
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          10
+        ],
+        "offset": 11
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 21
+      },
+      {
+        "name": "mean",
+        "shape": [
+          10
+        ],
+        "offset": 22
+      },
+      {
+        "name": "scale",
+        "shape": [
+          10
+        ],
+        "offset": 32
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          171
+        ],
+        "offset": 42
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          171
+        ],
+        "offset": 213
+      },
+      {
+        "name": "calibration_mean",
+        "shape": [
+          10
+        ],
+        "offset": 384
+      },
+      {
+        "name": "calibration_fraction",
+        "shape": [
+          10
+        ],
+        "offset": 394
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_bc_l1_c10",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_bc_l1_c10.bin",
+    "sha256": "774cc8a9ed208cda349dc0e4c5556339c51f1e866c855d4589b9bd936b9c9dfb",
+    "index_file": "ml8_bc_l1_c10.json",
+    "index_sha256": "419d959742abd4b009c47a40fa582042b3b2b73f303716f4cfb098e2a6be198f",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "malignant",
+      "benign"
+    ],
+    "preprocessing": "10 mean features standardized with stored train-only mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_bc_l1_c10_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          10
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 10
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          10
+        ],
+        "offset": 11
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 21
+      },
+      {
+        "name": "mean",
+        "shape": [
+          10
+        ],
+        "offset": 22
+      },
+      {
+        "name": "scale",
+        "shape": [
+          10
+        ],
+        "offset": 32
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          171
+        ],
+        "offset": 42
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          171
+        ],
+        "offset": 213
+      },
+      {
+        "name": "calibration_mean",
+        "shape": [
+          9
+        ],
+        "offset": 384
+      },
+      {
+        "name": "calibration_fraction",
+        "shape": [
+          9
+        ],
+        "offset": 393
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_bc_l2_c0p01",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_bc_l2_c0p01.bin",
+    "sha256": "b6bbce0490166903df830e70565d59f10c3e57fece965844556eb64c45cf0b86",
+    "index_file": "ml8_bc_l2_c0p01.json",
+    "index_sha256": "ceecd2745bd99a1bcf1b696d92e0f3a4fd7ceaf3abcb6078717b9fb7b7ac0a9d",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "malignant",
+      "benign"
+    ],
+    "preprocessing": "10 mean features standardized with stored train-only mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_bc_l2_c0p01_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          10
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 10
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          10
+        ],
+        "offset": 11
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 21
+      },
+      {
+        "name": "mean",
+        "shape": [
+          10
+        ],
+        "offset": 22
+      },
+      {
+        "name": "scale",
+        "shape": [
+          10
+        ],
+        "offset": 32
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          171
+        ],
+        "offset": 42
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          171
+        ],
+        "offset": 213
+      },
+      {
+        "name": "calibration_mean",
+        "shape": [
+          10
+        ],
+        "offset": 384
+      },
+      {
+        "name": "calibration_fraction",
+        "shape": [
+          10
+        ],
+        "offset": 394
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_bc_l2_c0p1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_bc_l2_c0p1.bin",
+    "sha256": "ee11a9cec8bdaf82e5c69ed1b77e5611345dda2551ba929b2d58f4cb349088b4",
+    "index_file": "ml8_bc_l2_c0p1.json",
+    "index_sha256": "f8e3e8bd04bc385b0c9b83a3adedef93ebe3175358afcb0accc6697d5fbf3fc7",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "malignant",
+      "benign"
+    ],
+    "preprocessing": "10 mean features standardized with stored train-only mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_bc_l2_c0p1_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          10
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 10
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          10
+        ],
+        "offset": 11
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 21
+      },
+      {
+        "name": "mean",
+        "shape": [
+          10
+        ],
+        "offset": 22
+      },
+      {
+        "name": "scale",
+        "shape": [
+          10
+        ],
+        "offset": 32
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          171
+        ],
+        "offset": 42
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          171
+        ],
+        "offset": 213
+      },
+      {
+        "name": "calibration_mean",
+        "shape": [
+          10
+        ],
+        "offset": 384
+      },
+      {
+        "name": "calibration_fraction",
+        "shape": [
+          10
+        ],
+        "offset": 394
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_bc_l2_c1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_bc_l2_c1.bin",
+    "sha256": "0be6547f23f5608854ba8fb62ce7c71509bcf1624f2be7be396a6e718b346934",
+    "index_file": "ml8_bc_l2_c1.json",
+    "index_sha256": "017f9e3df6195094cba24b72708411d59402332a7e70c1d9aa8ce0426ee2aab8",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "malignant",
+      "benign"
+    ],
+    "preprocessing": "10 mean features standardized with stored train-only mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_bc_l2_c1_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          10
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 10
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          10
+        ],
+        "offset": 11
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 21
+      },
+      {
+        "name": "mean",
+        "shape": [
+          10
+        ],
+        "offset": 22
+      },
+      {
+        "name": "scale",
+        "shape": [
+          10
+        ],
+        "offset": 32
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          171
+        ],
+        "offset": 42
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          171
+        ],
+        "offset": 213
+      },
+      {
+        "name": "calibration_mean",
+        "shape": [
+          10
+        ],
+        "offset": 384
+      },
+      {
+        "name": "calibration_fraction",
+        "shape": [
+          10
+        ],
+        "offset": 394
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_bc_l2_c10",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_bc_l2_c10.bin",
+    "sha256": "b0a42336be48d67116dbb6156deb89f4152eb21a682adf83eaeaa26182e7b606",
+    "index_file": "ml8_bc_l2_c10.json",
+    "index_sha256": "7436b8a387e557a7fafcfffa85b76fca12c3a4e1b44e618953e9263ecf807764",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "malignant",
+      "benign"
+    ],
+    "preprocessing": "10 mean features standardized with stored train-only mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_bc_l2_c10_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          10
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 10
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          10
+        ],
+        "offset": 11
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 21
+      },
+      {
+        "name": "mean",
+        "shape": [
+          10
+        ],
+        "offset": 22
+      },
+      {
+        "name": "scale",
+        "shape": [
+          10
+        ],
+        "offset": 32
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          171
+        ],
+        "offset": 42
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          171
+        ],
+        "offset": 213
+      },
+      {
+        "name": "calibration_mean",
+        "shape": [
+          9
+        ],
+        "offset": 384
+      },
+      {
+        "name": "calibration_fraction",
+        "shape": [
+          9
+        ],
+        "offset": 393
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_separable_l2_c0p01",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_separable_l2_c0p01.bin",
+    "sha256": "1057bddde8c7e7a0225fb1b50de0b3fc9d309a759c8e07c368a9890afbeecd05",
+    "index_file": "ml8_separable_l2_c0p01.json",
+    "index_sha256": "32bd4df595ec89058b090848c9e83611c594d6f9b68c2d8d7251ed9949327add",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "2 features standardized using stored mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_separable_l2_c0p01_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 2
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          2
+        ],
+        "offset": 3
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 5
+      },
+      {
+        "name": "mean",
+        "shape": [
+          2
+        ],
+        "offset": 6
+      },
+      {
+        "name": "scale",
+        "shape": [
+          2
+        ],
+        "offset": 8
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          120
+        ],
+        "offset": 10
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          120
+        ],
+        "offset": 130
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_separable_l2_c1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_separable_l2_c1.bin",
+    "sha256": "990f436078ee38e9a9a2cf9bd22c63adfd0c9133b096e42ad05ca12ede1c9a4c",
+    "index_file": "ml8_separable_l2_c1.json",
+    "index_sha256": "bb267c24c64a3cc443fc14a28cd70dd183c4e500c0f7917d9a0329ae88744b3f",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "2 features standardized using stored mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_separable_l2_c1_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 2
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          2
+        ],
+        "offset": 3
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 5
+      },
+      {
+        "name": "mean",
+        "shape": [
+          2
+        ],
+        "offset": 6
+      },
+      {
+        "name": "scale",
+        "shape": [
+          2
+        ],
+        "offset": 8
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          120
+        ],
+        "offset": 10
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          120
+        ],
+        "offset": 130
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_separable_l2_c100",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_separable_l2_c100.bin",
+    "sha256": "9c5d2e3011ad764871667e64b6abd9d90c3a7ca0ab641aee37c01f62301b0eec",
+    "index_file": "ml8_separable_l2_c100.json",
+    "index_sha256": "d8cf52a3c1f000bedd18c3a4695e80518baccf002a2200cc536b03f8b4dcc441",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "2 features standardized using stored mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_separable_l2_c100_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 2
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          2
+        ],
+        "offset": 3
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 5
+      },
+      {
+        "name": "mean",
+        "shape": [
+          2
+        ],
+        "offset": 6
+      },
+      {
+        "name": "scale",
+        "shape": [
+          2
+        ],
+        "offset": 8
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          120
+        ],
+        "offset": 10
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          120
+        ],
+        "offset": 130
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml8_separable_l2_c10000",
+    "type": "pack",
+    "version": 1,
+    "file": "ml8_separable_l2_c10000.bin",
+    "sha256": "72479d3b2cc33d2daef13cc782ec01bbc37db1f647ad9248be278e74ab85e730",
+    "index_file": "ml8_separable_l2_c10000.json",
+    "index_sha256": "8c41437718663f05a6455a2a4335dd396f2cc6958d5dd6cf2f7b75108efadba3",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "2 features standardized using stored mean/scale",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml8_separable_l2_c10000_metrics.json",
+    "arrays": [
+      {
+        "name": "coef_scaled",
+        "shape": [
+          1,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "intercept_scaled",
+        "shape": [
+          1
+        ],
+        "offset": 2
+      },
+      {
+        "name": "coef_original",
+        "shape": [
+          2
+        ],
+        "offset": 3
+      },
+      {
+        "name": "intercept_original",
+        "shape": [
+          1
+        ],
+        "offset": 5
+      },
+      {
+        "name": "mean",
+        "shape": [
+          2
+        ],
+        "offset": 6
+      },
+      {
+        "name": "scale",
+        "shape": [
+          2
+        ],
+        "offset": 8
+      },
+      {
+        "name": "test_probs",
+        "shape": [
+          120
+        ],
+        "offset": 10
+      },
+      {
+        "name": "test_labels",
+        "shape": [
+          120
+        ],
+        "offset": 130
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_c0p1_g0p1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_c0p1_g0p1.bin",
+    "sha256": "9eb37d4a5230b2ac75cf2b243d32b1e55bd47e247e81cc6a12cd8e80a3cf820f",
+    "index_file": "ml9_moons_c0p1_g0p1.json",
+    "index_sha256": "b83f478f4717b1f1149db058e63a577bdd192256eb6f58373442ff3ae5d3e043",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_c0p1_g0p1_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          153,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          153
+        ],
+        "offset": 306
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 459
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 460
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          153
+        ],
+        "offset": 461
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          153
+        ],
+        "offset": 614
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          153
+        ],
+        "offset": 767
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          153
+        ],
+        "offset": 920
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 1073
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 1074
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 1075
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_c0p1_g1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_c0p1_g1.bin",
+    "sha256": "45133d658ed861638b44126d9576865af0310d8bad82f7b6a514967d9aecf7ba",
+    "index_file": "ml9_moons_c0p1_g1.json",
+    "index_sha256": "d804fd8442906af44fe02398cadd45e8e6c9e29ccb4029c4a2900fa4aab5840d",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_c0p1_g1_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          121,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          121
+        ],
+        "offset": 242
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 363
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 364
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          121
+        ],
+        "offset": 365
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          121
+        ],
+        "offset": 486
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          121
+        ],
+        "offset": 607
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          121
+        ],
+        "offset": 728
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 849
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 850
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 851
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_c0p1_g10",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_c0p1_g10.bin",
+    "sha256": "893c0f039c82992b5cba6ebf8611050a488b369ba0701e968e644f8736dd6763",
+    "index_file": "ml9_moons_c0p1_g10.json",
+    "index_sha256": "8b4265ed7736901255aff685644c48d8972325444086fa52a4b4a916a2d710f5",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_c0p1_g10_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          199,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          199
+        ],
+        "offset": 398
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 597
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 598
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          199
+        ],
+        "offset": 599
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          199
+        ],
+        "offset": 798
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          199
+        ],
+        "offset": 997
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          199
+        ],
+        "offset": 1196
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 1395
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 1396
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 1397
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_c1_g0p1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_c1_g0p1.bin",
+    "sha256": "a47b46d735208179830481c5e63eb0719c70dcc1188472c8d439670fb78da3aa",
+    "index_file": "ml9_moons_c1_g0p1.json",
+    "index_sha256": "14439a1896ab115388f8d52bb097674b8aa795cda01e3da91a26bb66b92f8cce",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_c1_g0p1_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          90,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          90
+        ],
+        "offset": 180
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 270
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 271
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          90
+        ],
+        "offset": 272
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          90
+        ],
+        "offset": 362
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          90
+        ],
+        "offset": 452
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          90
+        ],
+        "offset": 542
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 632
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 633
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 634
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_c1_g1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_c1_g1.bin",
+    "sha256": "40b9892ae84fc37e3742cb8fc2b6fae1d3dac8566c60483fd334c9681c0c9090",
+    "index_file": "ml9_moons_c1_g1.json",
+    "index_sha256": "edc25a1b3215a4189e373365b0c027bbe5a621453657d74b277abdf3b0337a3a",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_c1_g1_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          63,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          63
+        ],
+        "offset": 126
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 189
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 190
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          63
+        ],
+        "offset": 191
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          63
+        ],
+        "offset": 254
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          63
+        ],
+        "offset": 317
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          63
+        ],
+        "offset": 380
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 443
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 444
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 445
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_c1_g10",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_c1_g10.bin",
+    "sha256": "22a85297900295e40bd5800d9e5c6b5b6a33f01dbab5f14c23cf627314a2e47b",
+    "index_file": "ml9_moons_c1_g10.json",
+    "index_sha256": "0783fc2b9fb4bcf22b86c4c22bc7faa35b685273836d2d808e813f5a4e583043",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_c1_g10_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          98,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          98
+        ],
+        "offset": 196
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 294
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 295
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          98
+        ],
+        "offset": 296
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          98
+        ],
+        "offset": 394
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          98
+        ],
+        "offset": 492
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          98
+        ],
+        "offset": 590
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 688
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 689
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 690
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_c100_g0p1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_c100_g0p1.bin",
+    "sha256": "22782b1ca50c735827efa3ca0211676ac8547702a46a52379648302f457e4d50",
+    "index_file": "ml9_moons_c100_g0p1.json",
+    "index_sha256": "2119b4a9ca85af79a7da3257f64758050d4f1e932e6a8d3e5aba808320502074",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_c100_g0p1_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          59,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          59
+        ],
+        "offset": 118
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 177
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 178
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          59
+        ],
+        "offset": 179
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          59
+        ],
+        "offset": 238
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          59
+        ],
+        "offset": 297
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          59
+        ],
+        "offset": 356
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 415
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 416
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 417
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_c100_g1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_c100_g1.bin",
+    "sha256": "88b53609028bc0462ae55f159da9b4b3f8a5e47e0776e70d47eb238f9a5bcac2",
+    "index_file": "ml9_moons_c100_g1.json",
+    "index_sha256": "1e1732e2621e7d7079eb5b26e8210f3a39bb0a5a6cb1b5619e2cbcd6eb63ff24",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_c100_g1_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          39,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          39
+        ],
+        "offset": 78
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 117
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 118
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          39
+        ],
+        "offset": 119
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          39
+        ],
+        "offset": 158
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          39
+        ],
+        "offset": 197
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          39
+        ],
+        "offset": 236
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 275
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 276
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 277
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_c100_g10",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_c100_g10.bin",
+    "sha256": "6935a21473e2e5d751afeb4fb552a39d693a3aaaa9b484f6e5556a0a30ecb7c4",
+    "index_file": "ml9_moons_c100_g10.json",
+    "index_sha256": "587049b5adcc55253c787a5b34913e7b81f5f1048350ac58c0e5061b453c5fd8",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_c100_g10_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          70,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          70
+        ],
+        "offset": 140
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 210
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 211
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          70
+        ],
+        "offset": 212
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          70
+        ],
+        "offset": 282
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          70
+        ],
+        "offset": 352
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          70
+        ],
+        "offset": 422
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 492
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 493
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 494
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_blobs_linear_c0p01",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_blobs_linear_c0p01.bin",
+    "sha256": "279c729c05a93156e6c9b16583ef8810fe313511cebe3abc9c869e8edef48b69",
+    "index_file": "ml9_blobs_linear_c0p01.json",
+    "index_sha256": "e25f67d43e8bffe13df1dbe325c824bb05b6ed8f0a4cd4e0744e7186cf6fffa5",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_blobs_linear_c0p01_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          200,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          200
+        ],
+        "offset": 400
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 600
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 601
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          200
+        ],
+        "offset": 602
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          200
+        ],
+        "offset": 802
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          200
+        ],
+        "offset": 1002
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          200
+        ],
+        "offset": 1202
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 1402
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 1403
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 1404
+      },
+      {
+        "name": "engine_support_vectors",
+        "shape": [
+          1,
+          2
+        ],
+        "offset": 1406
+      },
+      {
+        "name": "engine_dual_coef",
+        "shape": [
+          1
+        ],
+        "offset": 1408
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_blobs_linear_c1",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_blobs_linear_c1.bin",
+    "sha256": "cf9efc128a9ff3ae564512c44d5fa1afd9887312136761acdaca5b7e8c226ef1",
+    "index_file": "ml9_blobs_linear_c1.json",
+    "index_sha256": "c6c062356c4f94b91176d4ffb1351909302149e47fba3023631c29371c2d761c",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_blobs_linear_c1_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          156,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          156
+        ],
+        "offset": 312
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 468
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 469
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          156
+        ],
+        "offset": 470
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          156
+        ],
+        "offset": 626
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          156
+        ],
+        "offset": 782
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          156
+        ],
+        "offset": 938
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 1094
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 1095
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 1096
+      },
+      {
+        "name": "engine_support_vectors",
+        "shape": [
+          1,
+          2
+        ],
+        "offset": 1098
+      },
+      {
+        "name": "engine_dual_coef",
+        "shape": [
+          1
+        ],
+        "offset": 1100
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_blobs_linear_c100",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_blobs_linear_c100.bin",
+    "sha256": "0ce88eb49d4021035907041903077a048480bafd74e706ce7f174826b4fa17a2",
+    "index_file": "ml9_blobs_linear_c100.json",
+    "index_sha256": "21d91626c7594ad736abc919763362ddddc4ebf5ed5ade1414633c54c78a683f",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_blobs_linear_c100_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          155,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          155
+        ],
+        "offset": 310
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 465
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 466
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          155
+        ],
+        "offset": 467
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          155
+        ],
+        "offset": 622
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          155
+        ],
+        "offset": 777
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          155
+        ],
+        "offset": 932
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 1087
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 1088
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 1089
+      },
+      {
+        "name": "engine_support_vectors",
+        "shape": [
+          1,
+          2
+        ],
+        "offset": 1091
+      },
+      {
+        "name": "engine_dual_coef",
+        "shape": [
+          1
+        ],
+        "offset": 1093
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_scale_scaled",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_scale_scaled.bin",
+    "sha256": "06b44dc4de395db38bb78658958f634b2226d9b79811a37755a9ae248200a3a7",
+    "index_file": "ml9_moons_scale_scaled.json",
+    "index_sha256": "d2b2d425fba4f2862ec0ed5aee64e55b79f58b47c8c89db819e89757b1ff476e",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_scale_scaled_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          63,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          63
+        ],
+        "offset": 126
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 189
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 190
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          63
+        ],
+        "offset": 191
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          63
+        ],
+        "offset": 254
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          63
+        ],
+        "offset": 317
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          63
+        ],
+        "offset": 380
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 443
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 444
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 445
+      },
+      {
+        "name": "feature_stretch",
+        "shape": [
+          2
+        ],
+        "offset": 447
+      },
+      {
+        "name": "scale_mean",
+        "shape": [
+          2
+        ],
+        "offset": 449
+      },
+      {
+        "name": "scale_std",
+        "shape": [
+          2
+        ],
+        "offset": 451
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml9_moons_scale_unscaled",
+    "type": "pack",
+    "version": 1,
+    "file": "ml9_moons_scale_unscaled.bin",
+    "sha256": "764150b886e78b7392e49b5c7c620102a73bb05863d066563c58bda5a48e13a3",
+    "index_file": "ml9_moons_scale_unscaled.json",
+    "index_sha256": "abaa42cf9d3f21b483ddf8fb919aadf57c78910ecaa0d0861420d2ee5fa7116f",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Input transformed according to pack scaling metadata; use stored support vectors in the same coordinates",
+    "engine": "engine_kernel_b1.tflite",
+    "metrics_file": "ml9_moons_scale_unscaled_metrics.json",
+    "arrays": [
+      {
+        "name": "support_vectors",
+        "shape": [
+          195,
+          2
+        ],
+        "offset": 0
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          195
+        ],
+        "offset": 390
+      },
+      {
+        "name": "intercept",
+        "shape": [
+          1
+        ],
+        "offset": 585
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "offset": 586
+      },
+      {
+        "name": "support_indices",
+        "shape": [
+          195
+        ],
+        "offset": 587
+      },
+      {
+        "name": "alphas",
+        "shape": [
+          195
+        ],
+        "offset": 782
+      },
+      {
+        "name": "free_mask",
+        "shape": [
+          195
+        ],
+        "offset": 977
+      },
+      {
+        "name": "bounded_mask",
+        "shape": [
+          195
+        ],
+        "offset": 1172
+      },
+      {
+        "name": "platt_A",
+        "shape": [
+          1
+        ],
+        "offset": 1367
+      },
+      {
+        "name": "platt_B",
+        "shape": [
+          1
+        ],
+        "offset": 1368
+      },
+      {
+        "name": "classes",
+        "shape": [
+          2
+        ],
+        "offset": 1369
+      },
+      {
+        "name": "feature_stretch",
+        "shape": [
+          2
+        ],
+        "offset": 1371
+      }
+    ],
+    "engine_variants": [
+      "engine_kernel_b1.tflite",
+      "engine_kernel_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml11_stacking_oof",
+    "type": "pack",
+    "version": 1,
+    "file": "ml11_stacking_oof.bin",
+    "sha256": "dcd8207a3970094af155b69ba5d33fb0af3028d5c7e371cce498f4bdf396b1c7",
+    "index_file": "ml11_stacking_oof.json",
+    "index_sha256": "b6820c694e8a2161d841a183fe4f49fd3c6483d5c52c084d24afbd7ae89df4ce",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Meta input: positive-class probability from KNN(1), SVC(C=100,gamma=10), RF(200,depth12,max_features2) in this order",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml11_stacking_oof_metrics.json",
+    "arrays": [
+      {
+        "name": "meta_coef",
+        "shape": [
+          1,
+          3
+        ],
+        "offset": 0
+      },
+      {
+        "name": "meta_intercept",
+        "shape": [
+          1
+        ],
+        "offset": 3
+      },
+      {
+        "name": "meta_features_train",
+        "shape": [
+          210,
+          3
+        ],
+        "offset": 4
+      },
+      {
+        "name": "meta_features_test",
+        "shape": [
+          90,
+          3
+        ],
+        "offset": 634
+      },
+      {
+        "name": "labels_train",
+        "shape": [
+          210
+        ],
+        "offset": 904
+      },
+      {
+        "name": "labels_test",
+        "shape": [
+          90
+        ],
+        "offset": 1114
+      },
+      {
+        "name": "test_probabilities",
+        "shape": [
+          90
+        ],
+        "offset": 1204
+      },
+      {
+        "name": "base_oof",
+        "shape": [
+          210,
+          3
+        ],
+        "offset": 1294
+      },
+      {
+        "name": "base_infold",
+        "shape": [
+          210,
+          3
+        ],
+        "offset": 1924
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "ml11_stacking_infold",
+    "type": "pack",
+    "version": 1,
+    "file": "ml11_stacking_infold.bin",
+    "sha256": "fe4b8f71ff19b2097ce08ac2e334b60f27e607fb05184075c0ee5103060c1865",
+    "index_file": "ml11_stacking_infold.json",
+    "index_sha256": "51f42912079d55632b4637e91ac6dbbfc70c7ccfd525d39e136100b0c3bae769",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": [
+      "0",
+      "1"
+    ],
+    "preprocessing": "Meta input: positive-class probability from KNN(1), SVC(C=100,gamma=10), RF(200,depth12,max_features2) in this order",
+    "engine": "engine_linear_b1.tflite",
+    "metrics_file": "ml11_stacking_infold_metrics.json",
+    "arrays": [
+      {
+        "name": "meta_coef",
+        "shape": [
+          1,
+          3
+        ],
+        "offset": 0
+      },
+      {
+        "name": "meta_intercept",
+        "shape": [
+          1
+        ],
+        "offset": 3
+      },
+      {
+        "name": "meta_features_train",
+        "shape": [
+          210,
+          3
+        ],
+        "offset": 4
+      },
+      {
+        "name": "meta_features_test",
+        "shape": [
+          90,
+          3
+        ],
+        "offset": 634
+      },
+      {
+        "name": "labels_train",
+        "shape": [
+          210
+        ],
+        "offset": 904
+      },
+      {
+        "name": "labels_test",
+        "shape": [
+          90
+        ],
+        "offset": 1114
+      },
+      {
+        "name": "test_probabilities",
+        "shape": [
+          90
+        ],
+        "offset": 1204
+      },
+      {
+        "name": "base_oof",
+        "shape": [
+          210,
+          3
+        ],
+        "offset": 1294
+      },
+      {
+        "name": "base_infold",
+        "shape": [
+          210,
+          3
+        ],
+        "offset": 1924
+      }
+    ],
+    "engine_variants": [
+      "engine_linear_b1.tflite",
+      "engine_linear_b2500.tflite"
+    ]
+  },
+  {
+    "id": "engine_linear_b1",
+    "type": "engine",
+    "version": 1,
+    "file": "engine_linear_b1.tflite",
+    "sha256": "3e49355295576ded7741c8cf80e4956ef6cbd1217205cf5fcb943194eeeff15d",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          1,
+          4
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "Raw scores; app applies sigmoid, softmax, or exponential. Mask unused features/classes."
+  },
+  {
+    "id": "engine_linear_b2500",
+    "type": "engine",
+    "version": 1,
+    "file": "engine_linear_b2500.tflite",
+    "sha256": "b413b89fe346aad654ba89b21f6771d8c5dc8a3b7328154a9b295fc8b97c3b7c",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          2500,
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "weights",
+        "shape": [
+          32,
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_mask",
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "class_mask",
+        "shape": [
+          4
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "scores",
+        "shape": [
+          2500,
+          4
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "Raw scores; app applies sigmoid, softmax, or exponential. Mask unused features/classes."
+  },
+  {
+    "id": "engine_distance_b1",
+    "type": "engine",
+    "version": 1,
+    "file": "engine_distance_b1.tflite",
+    "sha256": "e65014d53f4d44a14a363cff34870824c97b6c1a5df568fb1c49e5c29e6f7c96",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_points",
+        "shape": [
+          1000,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_weights",
+        "shape": [
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "k",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "distances",
+        "shape": [
+          1,
+          30
+        ]
+      },
+      {
+        "name": "indices",
+        "shape": [
+          1,
+          30
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "Euclidean distances with weighted squared feature differences; valid first k entries, remaining entries masked with +large distance and index -1; references beyond count ignored."
+  },
+  {
+    "id": "engine_distance_b2500",
+    "type": "engine",
+    "version": 1,
+    "file": "engine_distance_b2500.tflite",
+    "sha256": "0fa63bea3bb888291dc6c5e9b9b8fb4618f55e63c647eece3e3852025c16fd6d",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          2500,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_points",
+        "shape": [
+          1000,
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "feature_weights",
+        "shape": [
+          13
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "reference_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "k",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "distances",
+        "shape": [
+          2500,
+          30
+        ]
+      },
+      {
+        "name": "indices",
+        "shape": [
+          2500,
+          30
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "Euclidean distances with weighted squared feature differences; valid first k entries, remaining entries masked with +large distance and index -1; references beyond count ignored."
+  },
+  {
+    "id": "engine_kernel_b1",
+    "type": "engine",
+    "version": 1,
+    "file": "engine_kernel_b1.tflite",
+    "sha256": "16e574425d47c01dcdcb2726a01ccec1419f0f9ab103f8381a0dddc57dcf4972",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          1,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          1,
+          1
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "kernel_code=0 linear, 1 RBF; dual_coef contains signed alpha*y; pad support vectors and coefficients with zeros."
+  },
+  {
+    "id": "engine_kernel_b2500",
+    "type": "engine",
+    "version": 1,
+    "file": "engine_kernel_b2500.tflite",
+    "sha256": "98bed32aff6d6cf08f2ac6cb4b1ceef2c01a6473d8ca8e9f996859b693676140",
+    "inputs": [
+      {
+        "name": "features",
+        "shape": [
+          2500,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_vectors",
+        "shape": [
+          256,
+          2
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "dual_coef",
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "bias",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "gamma",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "support_count",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      },
+      {
+        "name": "kernel_code",
+        "shape": [
+          1
+        ],
+        "dtype": "float32",
+        "range": "model-dependent"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "shape": [
+          2500,
+          1
+        ]
+      }
+    ],
+    "labels": null,
+    "preprocessing": "kernel_code=0 linear, 1 RBF; dual_coef contains signed alpha*y; pad support vectors and coefficients with zeros."
+  }
+]

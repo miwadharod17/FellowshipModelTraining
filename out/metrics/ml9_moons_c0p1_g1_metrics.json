@@ -1,0 +1,20 @@
+{
+  "name": "ml9_moons_c0p1_g1",
+  "date": "2026-11-16",
+  "seed": 42,
+  "dataset": "moons_main",
+  "settings": {
+    "kernel": "rbf",
+    "C": 0.1,
+    "gamma": 1,
+    "scaling": "none"
+  },
+  "train_accuracy": 0.8904761904761904,
+  "test_accuracy": 0.8888888888888888,
+  "n_support": [
+    61,
+    60
+  ],
+  "free_count": 9,
+  "bounded_count": 112
+}

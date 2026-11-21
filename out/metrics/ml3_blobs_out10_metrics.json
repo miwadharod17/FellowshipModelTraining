@@ -1,0 +1,123 @@
+{
+  "name": "ml3_blobs_out10",
+  "date": "2026-11-16",
+  "seed": 42,
+  "dataset": "blobs_out10",
+  "settings": {
+    "k_values": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "seeding": [
+      "random",
+      "k-means++"
+    ],
+    "restarts": 10,
+    "max_steps": 30
+  },
+  "summary": [
+    {
+      "k": 2,
+      "initialization": "random",
+      "best_restart": 2,
+      "objective": 6436.2080078125,
+      "silhouette": 0.4649021327495575
+    },
+    {
+      "k": 2,
+      "initialization": "k-means++",
+      "best_restart": 0,
+      "objective": 6436.2080078125,
+      "silhouette": 0.4649021327495575
+    },
+    {
+      "k": 3,
+      "initialization": "random",
+      "best_restart": 0,
+      "objective": 2633.85009765625,
+      "silhouette": 0.6516078114509583
+    },
+    {
+      "k": 3,
+      "initialization": "k-means++",
+      "best_restart": 0,
+      "objective": 2633.85009765625,
+      "silhouette": 0.6516078114509583
+    },
+    {
+      "k": 4,
+      "initialization": "random",
+      "best_restart": 6,
+      "objective": 2147.0673828125,
+      "silhouette": 0.6636653542518616
+    },
+    {
+      "k": 4,
+      "initialization": "k-means++",
+      "best_restart": 8,
+      "objective": 2147.0673828125,
+      "silhouette": 0.6636653542518616
+    },
+    {
+      "k": 5,
+      "initialization": "random",
+      "best_restart": 3,
+      "objective": 1685.182373046875,
+      "silhouette": 0.6784065961837769
+    },
+    {
+      "k": 5,
+      "initialization": "k-means++",
+      "best_restart": 5,
+      "objective": 1685.182373046875,
+      "silhouette": 0.6784065961837769
+    },
+    {
+      "k": 6,
+      "initialization": "random",
+      "best_restart": 6,
+      "objective": 1417.5955810546875,
+      "silhouette": 0.6847080588340759
+    },
+    {
+      "k": 6,
+      "initialization": "k-means++",
+      "best_restart": 9,
+      "objective": 1416.9110107421875,
+      "silhouette": 0.6851955652236938
+    },
+    {
+      "k": 7,
+      "initialization": "random",
+      "best_restart": 2,
+      "objective": 1272.9852294921875,
+      "silhouette": 0.6762834787368774
+    },
+    {
+      "k": 7,
+      "initialization": "k-means++",
+      "best_restart": 4,
+      "objective": 1278.091796875,
+      "silhouette": 0.5624561905860901
+    },
+    {
+      "k": 8,
+      "initialization": "random",
+      "best_restart": 8,
+      "objective": 1209.4080810546875,
+      "silhouette": 0.5643717646598816
+    },
+    {
+      "k": 8,
+      "initialization": "k-means++",
+      "best_restart": 2,
+      "objective": 1150.519775390625,
+      "silhouette": 0.5602385401725769
+    }
+  ]
+}
